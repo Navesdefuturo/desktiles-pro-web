@@ -5,6 +5,7 @@ export default function Footer() {
         <div className="flex items-center gap-4">
           <span className="text-[15px] font-semibold text-[#1D1D1F]">DeskTiles</span>
           <span className="text-[13px] text-[#6E6E73]">© 2025 DeskTiles</span>
+          <span className="text-[13px] text-[#6E6E73]">Made with ❤️ in Barcelona</span>
         </div>
 
         <nav className="flex items-center gap-6">

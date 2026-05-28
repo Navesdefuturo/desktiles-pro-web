@@ -1,136 +1,79 @@
 'use client'
 
-function DesktopMockup({ variant }: { variant: 'before' | 'after' }) {
+function AppIcon() {
   return (
-    <div className="relative w-full aspect-[16/10] rounded-2xl overflow-hidden shadow-2xl border border-[#D2D2D7]/40">
-      {/* macOS window chrome */}
-      <div className="h-7 bg-[#E8E8E8] flex items-center px-3 gap-1.5 border-b border-[#D2D2D7]/60">
-        <div className="w-3 h-3 rounded-full bg-[#FF5F57]" />
-        <div className="w-3 h-3 rounded-full bg-[#FFBD2E]" />
-        <div className="w-3 h-3 rounded-full bg-[#28C840]" />
-        <span className="ml-auto text-[10px] text-[#6E6E73]">Desktop</span>
-      </div>
+    <div className="w-24 h-24 mx-auto mb-8 rounded-[22px] bg-gradient-to-br from-[#C8D8EC] via-[#AABAD6] to-[#8AA8C8] shadow-2xl flex items-center justify-center">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+        <rect x="6" y="6" width="16" height="16" rx="4" fill="white" fillOpacity="0.9" />
+        <rect x="26" y="6" width="16" height="16" rx="4" fill="white" fillOpacity="0.6" />
+        <rect x="6" y="26" width="16" height="16" rx="4" fill="white" fillOpacity="0.6" />
+        <rect x="26" y="26" width="16" height="16" rx="4" fill="white" fillOpacity="0.4" />
+      </svg>
+    </div>
+  )
+}
 
-      {/* Desktop content */}
-      <div
-        className="flex-1 bg-gradient-to-br from-[#E8ECF0] to-[#D0D8E4] p-4 relative"
-        style={{ height: 'calc(100% - 28px)' }}
-      >
-        {variant === 'before' ? (
-          // BEFORE: Messy desktop with scattered icons
-          <div className="relative w-full h-full">
-            <div className="absolute top-4 left-8 text-center">
-              <div className="w-10 h-10 bg-[#4B9EFF]/20 border border-[#4B9EFF]/30 rounded-xl mb-1 flex items-center justify-center">
-                <span className="text-lg">📄</span>
-              </div>
-              <span className="text-[8px] text-[#1D1D1F]">Report.pdf</span>
+function HeroDesktop() {
+  return (
+    <div className="relative w-full max-w-[900px] mx-auto">
+      {/* Glow behind */}
+      <div className="absolute inset-0 bg-[#AABAD6]/20 blur-3xl rounded-full scale-75 -translate-y-4" />
+
+      <div className="relative rounded-2xl overflow-hidden shadow-[0_32px_80px_rgba(0,0,0,0.18)] border border-white/60">
+        {/* macOS chrome */}
+        <div className="h-8 bg-[#ECECEC] flex items-center px-4 gap-1.5 border-b border-[#D8D8D8]">
+          <div className="w-3 h-3 rounded-full bg-[#FF5F57]" />
+          <div className="w-3 h-3 rounded-full bg-[#FFBD2E]" />
+          <div className="w-3 h-3 rounded-full bg-[#28C840]" />
+          <span className="ml-auto text-[11px] text-[#8E8E93] font-medium">Desktop</span>
+        </div>
+
+        {/* Desktop content */}
+        <div className="bg-gradient-to-br from-[#E4EBF5] via-[#D8E4F0] to-[#C8D8E8] p-6 min-h-[320px] relative flex flex-col gap-3">
+
+          {/* Work tile — expanded */}
+          <div className="rounded-2xl bg-white/65 backdrop-blur-sm border border-white/80 shadow-lg overflow-hidden w-full max-w-[340px]">
+            <div className="px-4 py-2.5 flex items-center gap-2.5 bg-[#AABAD6]/35 border-b border-[#AABAD6]/25">
+              <div className="w-2.5 h-2.5 rounded-full bg-[#7BA8C4]" />
+              <span className="text-[12px] font-semibold text-[#1D1D1F]">Work</span>
+              <span className="ml-auto text-[10px] text-[#6E6E73]">5 files</span>
             </div>
-            <div className="absolute top-2 left-32 text-center">
-              <div className="w-10 h-10 bg-yellow-400/20 border border-yellow-400/30 rounded-xl mb-1 flex items-center justify-center">
-                <span className="text-lg">📁</span>
-              </div>
-              <span className="text-[8px] text-[#1D1D1F]">Projects</span>
-            </div>
-            <div className="absolute top-16 left-20 text-center">
-              <div className="w-10 h-10 bg-green-400/20 border border-green-400/30 rounded-xl mb-1 flex items-center justify-center">
-                <span className="text-lg">🖼️</span>
-              </div>
-              <span className="text-[8px] text-[#1D1D1F]">hero_v3.png</span>
-            </div>
-            <div className="absolute top-6 right-16 text-center">
-              <div className="w-10 h-10 bg-purple-400/20 border border-purple-400/30 rounded-xl mb-1 flex items-center justify-center">
-                <span className="text-lg">📊</span>
-              </div>
-              <span className="text-[8px] text-[#1D1D1F]">Budget.xlsx</span>
-            </div>
-            <div className="absolute top-24 right-8 text-center">
-              <div className="w-10 h-10 bg-red-400/20 border border-red-400/30 rounded-xl mb-1 flex items-center justify-center">
-                <span className="text-lg">📝</span>
-              </div>
-              <span className="text-[8px] text-[#1D1D1F]">Notes.txt</span>
-            </div>
-            <div className="absolute bottom-12 left-12 text-center">
-              <div className="w-10 h-10 bg-blue-400/20 border border-blue-400/30 rounded-xl mb-1 flex items-center justify-center">
-                <span className="text-lg">📁</span>
-              </div>
-              <span className="text-[8px] text-[#1D1D1F]">Old stuff</span>
-            </div>
-            <div className="absolute bottom-8 left-40 text-center">
-              <div className="w-10 h-10 bg-orange-400/20 border border-orange-400/30 rounded-xl mb-1 flex items-center justify-center">
-                <span className="text-lg">🎨</span>
-              </div>
-              <span className="text-[8px] text-[#1D1D1F]">logo_final2.ai</span>
-            </div>
-            <div className="absolute bottom-16 right-20 text-center">
-              <div className="w-10 h-10 bg-pink-400/20 border border-pink-400/30 rounded-xl mb-1 flex items-center justify-center">
-                <span className="text-lg">📄</span>
-              </div>
-              <span className="text-[8px] text-[#1D1D1F]">contract_v2.pdf</span>
-            </div>
-            <div className="absolute top-32 left-48 text-center">
-              <div className="w-10 h-10 bg-teal-400/20 border border-teal-400/30 rounded-xl mb-1 flex items-center justify-center">
-                <span className="text-lg">💾</span>
-              </div>
-              <span className="text-[8px] text-[#1D1D1F]">backup.zip</span>
-            </div>
-            {/* Label */}
-            <div className="absolute top-2 left-1/2 -translate-x-1/2 bg-black/30 backdrop-blur-sm text-white text-[9px] px-2 py-0.5 rounded-full">
-              Before
+            <div className="px-4 py-3 flex gap-3.5">
+              {[
+                { icon: '📄', name: 'Brief.pdf' },
+                { icon: '📊', name: 'Budget.xlsx' },
+                { icon: '🖼️', name: 'Mockup.png' },
+                { icon: '📝', name: 'Notes.txt' },
+              ].map((f) => (
+                <div key={f.name} className="text-center">
+                  <div className="w-10 h-10 bg-white/80 rounded-xl mb-1 flex items-center justify-center text-lg shadow-sm">{f.icon}</div>
+                  <span className="text-[8px] text-[#6E6E73]">{f.name}</span>
+                </div>
+              ))}
             </div>
           </div>
-        ) : (
-          // AFTER: Clean desktop with DeskTiles tiles
-          <div className="relative w-full h-full flex flex-col gap-2 pt-1">
-            {/* Label */}
-            <div className="absolute top-2 left-1/2 -translate-x-1/2 bg-[#1D1D1F]/70 backdrop-blur-sm text-white text-[9px] px-2 py-0.5 rounded-full z-10">
-              After
-            </div>
 
-            {/* Work tile - expanded */}
-            <div className="rounded-xl bg-white/60 backdrop-blur-sm border border-white/80 shadow-sm overflow-hidden mt-4">
-              <div className="px-3 py-1.5 flex items-center gap-2 bg-[#AABAD6]/40 border-b border-[#AABAD6]/30">
-                <div className="w-2 h-2 rounded-full bg-[#AABAD6]" />
-                <span className="text-[10px] font-semibold text-[#1D1D1F]">Work</span>
-                <span className="ml-auto text-[8px] text-[#6E6E73]">4 files</span>
-              </div>
-              <div className="px-3 py-2 flex gap-3">
-                <div className="text-center">
-                  <div className="w-8 h-8 bg-blue-100 rounded-lg mb-0.5 flex items-center justify-center text-sm">📄</div>
-                  <span className="text-[7px] text-[#6E6E73]">Report.pdf</span>
-                </div>
-                <div className="text-center">
-                  <div className="w-8 h-8 bg-green-100 rounded-lg mb-0.5 flex items-center justify-center text-sm">📊</div>
-                  <span className="text-[7px] text-[#6E6E73]">Budget.xlsx</span>
-                </div>
-                <div className="text-center">
-                  <div className="w-8 h-8 bg-purple-100 rounded-lg mb-0.5 flex items-center justify-center text-sm">📝</div>
-                  <span className="text-[7px] text-[#6E6E73]">Notes.txt</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Design tile - collapsed pill */}
-            <div className="rounded-full bg-[#E8F0F8]/80 border border-[#AABAD6]/40 px-3 py-1.5 flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-[#7BA7C7]" />
-              <span className="text-[10px] font-semibold text-[#1D1D1F]">Design</span>
-              <span className="ml-auto text-[8px] text-[#6E6E73]">6 files</span>
-            </div>
-
-            {/* Clients tile - collapsed pill */}
-            <div className="rounded-full bg-[#F0EFF8]/80 border border-[#B5AED6]/40 px-3 py-1.5 flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-[#9B8FD6]" />
-              <span className="text-[10px] font-semibold text-[#1D1D1F]">Clients</span>
-              <span className="ml-auto text-[8px] text-[#6E6E73]">3 files</span>
-            </div>
-
-            {/* Ideas tile - collapsed pill */}
-            <div className="rounded-full bg-[#F8F4E8]/80 border border-[#D6C76E]/40 px-3 py-1.5 flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-[#D6B85A]" />
-              <span className="text-[10px] font-semibold text-[#1D1D1F]">Ideas</span>
-              <span className="ml-auto text-[8px] text-[#6E6E73]">12 files</span>
-            </div>
+          {/* Client A tile — collapsed pill */}
+          <div className="rounded-full bg-[#E0EBF5]/80 border border-[#AABAD6]/50 px-4 py-2 flex items-center gap-2.5 w-fit shadow-sm">
+            <div className="w-2 h-2 rounded-full bg-[#7BA8C4]" />
+            <span className="text-[12px] font-semibold text-[#1D1D1F]">Client A</span>
+            <span className="ml-2 text-[10px] text-[#6E6E73]">8 files</span>
           </div>
-        )}
+
+          {/* Personal tile — collapsed pill */}
+          <div className="rounded-full bg-[#EDE8F8]/80 border border-[#C5B8E8]/50 px-4 py-2 flex items-center gap-2.5 w-fit shadow-sm">
+            <div className="w-2 h-2 rounded-full bg-[#A896D8]" />
+            <span className="text-[12px] font-semibold text-[#1D1D1F]">Personal</span>
+            <span className="ml-2 text-[10px] text-[#6E6E73]">3 files</span>
+          </div>
+
+          {/* Research tile — collapsed pill */}
+          <div className="rounded-full bg-[#F5EFE0]/80 border border-[#D6C870]/50 px-4 py-2 flex items-center gap-2.5 w-fit shadow-sm">
+            <div className="w-2 h-2 rounded-full bg-[#C8B060]" />
+            <span className="text-[12px] font-semibold text-[#1D1D1F]">Research</span>
+            <span className="ml-2 text-[10px] text-[#6E6E73]">12 files</span>
+          </div>
+        </div>
       </div>
     </div>
   )
@@ -138,65 +81,62 @@ function DesktopMockup({ variant }: { variant: 'before' | 'after' }) {
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center pt-14 px-6">
+    <section className="min-h-screen flex flex-col items-center justify-center pt-14 px-6 overflow-hidden">
       <div className="max-w-[1100px] w-full mx-auto text-center">
 
+        {/* App icon */}
+        <AppIcon />
+
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-[#AABAD6]/20 border border-[#AABAD6]/40 rounded-full px-4 py-1.5 mb-10">
-          <div className="w-1.5 h-1.5 rounded-full bg-[#AABAD6]" />
-          <span className="text-sm text-[#1D1D1F]">DeskTiles PRO — Now available</span>
+        <div className="inline-flex items-center gap-2 bg-white border border-[#D2D2D7]/70 rounded-full px-4 py-1.5 mb-6 shadow-sm">
+          <div className="w-1.5 h-1.5 rounded-full bg-[#34C759]" />
+          <span className="text-[13px] text-[#1D1D1F]">DeskTiles PRO — Available now</span>
         </div>
 
-        {/* Headline */}
-        <h1 className="text-[clamp(52px,8vw,96px)] font-bold tracking-[-0.04em] text-[#1D1D1F] leading-[1.0] mb-6">
+        {/* Massive headline — DockDoor style */}
+        <h1 className="font-bold tracking-[-0.05em] text-[#1D1D1F] leading-[0.95] mb-3"
+            style={{ fontSize: 'clamp(72px, 11vw, 140px)' }}>
           Projects.
-          <br />
-          <span className="text-[#6E6E73]">Not folders.</span>
+        </h1>
+        <h1 className="font-bold tracking-[-0.05em] leading-[0.95] mb-8"
+            style={{ fontSize: 'clamp(72px, 11vw, 140px)', color: '#7BA8C4' }}>
+          Not folders.
         </h1>
 
-        {/* Subheadline */}
-        <p className="text-[clamp(20px,3vw,28px)] font-medium text-[#1D1D1F] tracking-[-0.02em] mb-4">
+        {/* Sub */}
+        <p className="font-semibold tracking-[-0.02em] text-[#1D1D1F] mb-5"
+           style={{ fontSize: 'clamp(22px, 3vw, 34px)' }}>
           Desktop. Upgraded.
         </p>
 
-        {/* Supporting copy */}
-        <p className="text-[17px] text-[#6E6E73] max-w-[480px] mx-auto mb-10 leading-relaxed">
-          Organize your Mac desktop by project, not by folder.
-          Your workspace, finally as smart as you are.
+        {/* Body */}
+        <p className="text-[17px] text-[#6E6E73] max-w-[500px] mx-auto mb-10 leading-relaxed">
+          DeskTiles lets you group real Mac files into expandable desktop tiles
+          designed for focus, context, and fast access.
         </p>
 
-        {/* CTA buttons */}
+        {/* CTAs */}
         <div className="flex items-center justify-center gap-3 mb-4">
           <a
             href="#download"
-            className="bg-[#1D1D1F] text-white px-7 py-3 rounded-full text-[15px] font-medium hover:bg-[#3D3D3F] transition-colors"
+            className="bg-[#1D1D1F] text-white px-8 py-3.5 rounded-full text-[16px] font-medium hover:bg-[#3D3D3F] transition-colors"
           >
             Download Pro
           </a>
           <a
-            href="#showcase"
-            className="border border-[#D2D2D7] text-[#1D1D1F] px-7 py-3 rounded-full text-[15px] font-medium hover:bg-[#F0F0F0] transition-colors"
+            href="#how-it-works"
+            className="border border-[#D2D2D7] text-[#1D1D1F] px-8 py-3.5 rounded-full text-[16px] font-medium hover:bg-[#F5F5F5] transition-colors"
           >
-            Watch Demo
+            See How it Works
           </a>
         </div>
 
-        {/* Platform note */}
         <p className="text-[13px] text-[#6E6E73] mb-20">
-          macOS 13 Ventura and later
+          macOS 13 Ventura and later &nbsp;·&nbsp; No cloud &nbsp;·&nbsp; One-time purchase
         </p>
 
-        {/* Before / After mockup */}
-        <div className="grid grid-cols-2 gap-6 max-w-[900px] mx-auto">
-          <div>
-            <p className="text-[13px] text-[#6E6E73] mb-3 font-medium">Before</p>
-            <DesktopMockup variant="before" />
-          </div>
-          <div>
-            <p className="text-[13px] text-[#6E6E73] mb-3 font-medium">After</p>
-            <DesktopMockup variant="after" />
-          </div>
-        </div>
+        {/* Hero desktop mockup */}
+        <HeroDesktop />
 
       </div>
     </section>

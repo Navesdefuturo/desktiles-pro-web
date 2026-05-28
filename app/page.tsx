@@ -2,8 +2,8 @@ import Navigation from '@/components/Navigation'
 import Hero from '@/components/Hero'
 import WhatItIs from '@/components/WhatItIs'
 import ProductShowcase from '@/components/ProductShowcase'
+import AutoTiles from '@/components/AutoTiles'
 import Details from '@/components/Details'
-import Comparison from '@/components/Comparison'
 import Pricing from '@/components/Pricing'
 import Quote from '@/components/Quote'
 import Download from '@/components/Download'
@@ -16,8 +16,8 @@ export default function Home() {
       <Hero />
       <WhatItIs />
       <ProductShowcase />
+      <AutoTiles />
       <Details />
-      <Comparison />
       <Pricing />
       <Quote />
       <Download />
