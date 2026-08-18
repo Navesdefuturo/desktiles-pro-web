@@ -6,9 +6,15 @@ import { useState } from 'react'
 const PADDLE_PRODUCT_MONTHLY = 12001
 const PADDLE_PRODUCT_YEARLY = 12002
 
+declare global {
+  interface Window {
+    Paddle?: { Checkout: { open: (cfg: { product: number }) => void } }
+  }
+}
+
 function openPaddleCheckout(productId: number) {
-  if (typeof window !== 'undefined' && (window as { Paddle?: { Checkout: { open: (cfg: { product: number }) => void } } }).Paddle) {
-    (window as { Paddle: { Checkout: { open: (cfg: { product: number }) => void } } }).Paddle.Checkout.open({ product: productId })
+  if (typeof window !== 'undefined' && window.Paddle) {
+    window.Paddle.Checkout.open({ product: productId })
   }
 }
 
