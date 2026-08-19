@@ -121,7 +121,7 @@ export default function Hero() {
             href="#download"
             className="bg-[#1D1D1F] text-white px-8 py-3.5 rounded-full text-[16px] font-medium hover:bg-[#3D3D3F] transition-colors"
           >
-            Download Pro
+            Download Free
           </a>
           <a
             href="#how-it-works"
@@ -132,7 +132,7 @@ export default function Hero() {
         </div>
 
         <p className="text-[13px] text-[#6E6E73] mb-20">
-          macOS 13 Ventura and later &nbsp;·&nbsp; No cloud &nbsp;·&nbsp; One-time purchase
+          macOS 13 Ventura and later &nbsp;·&nbsp; No cloud &nbsp;·&nbsp; Free
         </p>
 
         {/* Hero desktop mockup */}
