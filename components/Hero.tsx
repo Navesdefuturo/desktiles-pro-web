@@ -90,7 +90,7 @@ export default function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 bg-white border border-[#D2D2D7]/70 rounded-full px-4 py-1.5 mb-6 shadow-sm">
           <div className="w-1.5 h-1.5 rounded-full bg-[#34C759]" />
-          <span className="text-[13px] text-[#1D1D1F]">DeskTiles PRO — Available now</span>
+          <span className="text-[13px] text-[#1D1D1F]">DeskTiles — Available now</span>
         </div>
 
         {/* Massive headline — DockDoor style */}

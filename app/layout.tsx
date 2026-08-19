@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import PaddleProvider from '@/components/PaddleProvider'
 
 export const metadata: Metadata = {
   title: 'DeskTiles — Projects. Not folders.',
@@ -26,12 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        {/* Paddle script — activar cuando tengas cuenta */}
-        {/* <script src="https://cdn.paddle.com/paddle/v2/paddle.js" async></script> */}
-      </head>
       <body>
-        <PaddleProvider />
         {children}
       </body>
     </html>

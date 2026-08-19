@@ -22,7 +22,7 @@ export default function Comparison() {
               Desktop Folders
             </div>
             <div className="p-5 text-[13px] font-semibold text-[#1D1D1F] border-l border-[#D2D2D7]/40 text-center bg-[#AABAD6]/10">
-              DeskTiles PRO
+              DeskTiles
             </div>
           </div>
 
