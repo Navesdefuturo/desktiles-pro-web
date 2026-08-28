@@ -1,14 +1,51 @@
 'use client'
 
+import { useEffect, useState } from 'react'
+import Image from 'next/image'
+
+const HEADLINE_SETS = [
+  { line1: 'Projects.', line2: 'Not folders.', tagline: 'Desktop. Upgraded.' },
+  { line1: 'Ok, think different…', line2: 'But organize better!', tagline: 'Way better.' },
+  { line1: 'The Desktop, Reimagined.', line2: 'From Chaos to Clarity.', tagline: 'Your Desktop. Your Way.' },
+]
+
+function HeadlineCarousel() {
+  const [index, setIndex] = useState(0)
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setIndex((i) => (i + 1) % HEADLINE_SETS.length)
+    }, 4000)
+    return () => clearInterval(id)
+  }, [])
+
+  const { line1, line2, tagline } = HEADLINE_SETS[index]
+
+  return (
+    <>
+      {/* Massive headline — DockDoor style */}
+      <h1 className="font-bold tracking-[-0.05em] text-[#1D1D1F] leading-[0.95] mb-3 transition-opacity duration-500"
+          style={{ fontSize: 'clamp(72px, 11vw, 140px)' }}>
+        {line1}
+      </h1>
+      <h1 className="font-bold tracking-[-0.05em] leading-[0.95] mb-8 transition-opacity duration-500"
+          style={{ fontSize: 'clamp(72px, 11vw, 140px)', color: '#7BA8C4' }}>
+        {line2}
+      </h1>
+
+      {/* Sub */}
+      <p className="font-semibold tracking-[-0.02em] text-[#1D1D1F] mb-5 transition-opacity duration-500"
+         style={{ fontSize: 'clamp(22px, 3vw, 34px)' }}>
+        {tagline}
+      </p>
+    </>
+  )
+}
+
 function AppIcon() {
   return (
-    <div className="w-24 h-24 mx-auto mb-8 rounded-[22px] bg-gradient-to-br from-[#C8D8EC] via-[#AABAD6] to-[#8AA8C8] shadow-2xl flex items-center justify-center">
-      <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-        <rect x="6" y="6" width="16" height="16" rx="4" fill="white" fillOpacity="0.9" />
-        <rect x="26" y="6" width="16" height="16" rx="4" fill="white" fillOpacity="0.6" />
-        <rect x="6" y="26" width="16" height="16" rx="4" fill="white" fillOpacity="0.6" />
-        <rect x="26" y="26" width="16" height="16" rx="4" fill="white" fillOpacity="0.4" />
-      </svg>
+    <div className="w-24 h-24 mx-auto mb-8 rounded-[22px] shadow-2xl overflow-hidden">
+      <Image src="/desktiles-icon.png" alt="DeskTiles icon" width={96} height={96} priority />
     </div>
   )
 }
@@ -93,21 +130,7 @@ export default function Hero() {
           <span className="text-[13px] text-[#1D1D1F]">DeskTiles — Available now</span>
         </div>
 
-        {/* Massive headline — DockDoor style */}
-        <h1 className="font-bold tracking-[-0.05em] text-[#1D1D1F] leading-[0.95] mb-3"
-            style={{ fontSize: 'clamp(72px, 11vw, 140px)' }}>
-          Projects.
-        </h1>
-        <h1 className="font-bold tracking-[-0.05em] leading-[0.95] mb-8"
-            style={{ fontSize: 'clamp(72px, 11vw, 140px)', color: '#7BA8C4' }}>
-          Not folders.
-        </h1>
-
-        {/* Sub */}
-        <p className="font-semibold tracking-[-0.02em] text-[#1D1D1F] mb-5"
-           style={{ fontSize: 'clamp(22px, 3vw, 34px)' }}>
-          Desktop. Upgraded.
-        </p>
+        <HeadlineCarousel />
 
         {/* Body */}
         <p className="text-[17px] text-[#6E6E73] max-w-[500px] mx-auto mb-10 leading-relaxed">
@@ -132,7 +155,7 @@ export default function Hero() {
         </div>
 
         <p className="text-[13px] text-[#6E6E73] mb-20">
-          macOS 13 Ventura and later &nbsp;·&nbsp; No cloud &nbsp;·&nbsp; Free
+          macOS 13 Ventura and later &nbsp;·&nbsp; No cloud
         </p>
 
         {/* Hero desktop mockup */}
