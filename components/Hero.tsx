@@ -4,9 +4,9 @@ import { useEffect, useState } from 'react'
 import Image from 'next/image'
 
 const HEADLINE_SETS = [
-  { line1: 'Projects.', line2: 'Not folders.', tagline: 'Desktop. Upgraded.' },
-  { line1: 'Ok, think different…', line2: 'But organize better!', tagline: 'Way better.' },
-  { line1: 'The Desktop, Reimagined.', line2: 'From Chaos to Clarity.', tagline: 'Your Desktop. Your Way.' },
+  { line1: 'Projects.', line2: 'Not folders.', line2Color: '#7BA8C4', tagline: 'Desktop. Upgraded.' },
+  { line1: 'Ok, think different…', line2: 'But organize better!', line2Color: '#C48A7B', tagline: 'Way better.' },
+  { line1: 'The Desktop, Reimagined.', line2: 'From Chaos to Clarity.', line2Color: '#8FBF8A', tagline: 'Your Desktop. Your Way.' },
 ]
 
 function HeadlineCarousel() {
@@ -19,17 +19,17 @@ function HeadlineCarousel() {
     return () => clearInterval(id)
   }, [])
 
-  const { line1, line2, tagline } = HEADLINE_SETS[index]
+  const { line1, line2, line2Color, tagline } = HEADLINE_SETS[index]
 
   return (
     <>
       {/* Massive headline — DockDoor style */}
       <h1 className="font-bold tracking-[-0.05em] text-[#1D1D1F] leading-[0.95] mb-3 transition-opacity duration-500"
-          style={{ fontSize: 'clamp(72px, 11vw, 140px)' }}>
+          style={{ fontSize: 'clamp(48px, 7vw, 88px)' }}>
         {line1}
       </h1>
-      <h1 className="font-bold tracking-[-0.05em] leading-[0.95] mb-8 transition-opacity duration-500"
-          style={{ fontSize: 'clamp(72px, 11vw, 140px)', color: '#7BA8C4' }}>
+      <h1 className="font-bold tracking-[-0.05em] leading-[0.95] mb-8 transition-all duration-500"
+          style={{ fontSize: 'clamp(48px, 7vw, 88px)', color: line2Color }}>
         {line2}
       </h1>
 
