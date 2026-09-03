@@ -29,9 +29,19 @@ export default function Navigation() {
       }`}
     >
       <div className="max-w-[1200px] mx-auto px-6 h-14 flex items-center justify-between">
-        <span className="text-[#1D1D1F] font-semibold text-[15px] tracking-[-0.01em] shrink-0">
-          DeskTiles
-        </span>
+        <div className="flex items-center gap-2 shrink-0">
+          <div className="w-7 h-7 rounded-[7px] bg-gradient-to-br from-[#C8D8EC] via-[#AABAD6] to-[#8AA8C8] flex items-center justify-center shadow-sm">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <rect x="1" y="1" width="5" height="5" rx="1.2" fill="white" fillOpacity="0.9"/>
+              <rect x="8" y="1" width="5" height="5" rx="1.2" fill="white" fillOpacity="0.6"/>
+              <rect x="1" y="8" width="5" height="5" rx="1.2" fill="white" fillOpacity="0.6"/>
+              <rect x="8" y="8" width="5" height="5" rx="1.2" fill="white" fillOpacity="0.4"/>
+            </svg>
+          </div>
+          <span className="text-[#1D1D1F] font-semibold text-[15px] tracking-[-0.01em]">
+            DeskTiles
+          </span>
+        </div>
 
         <div className="hidden md:flex items-center gap-8">
           {links.map((l) => (

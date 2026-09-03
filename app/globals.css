@@ -28,3 +28,25 @@ body {
   background: #AABAD6;
   color: #1D1D1F;
 }
+
+.text-animated-gradient {
+  background: linear-gradient(
+    90deg,
+    #7BA8C4,
+    #A896D8,
+    #7BC4A8,
+    #C4A87B,
+    #7BA8C4
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 5s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

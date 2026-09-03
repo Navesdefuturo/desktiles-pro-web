@@ -2,14 +2,13 @@
 
 function AppIcon() {
   return (
-    <div className="w-24 h-24 mx-auto mb-8 rounded-[22px] bg-gradient-to-br from-[#C8D8EC] via-[#AABAD6] to-[#8AA8C8] shadow-2xl flex items-center justify-center">
-      <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-        <rect x="6" y="6" width="16" height="16" rx="4" fill="white" fillOpacity="0.9" />
-        <rect x="26" y="6" width="16" height="16" rx="4" fill="white" fillOpacity="0.6" />
-        <rect x="6" y="26" width="16" height="16" rx="4" fill="white" fillOpacity="0.6" />
-        <rect x="26" y="26" width="16" height="16" rx="4" fill="white" fillOpacity="0.4" />
-      </svg>
-    </div>
+    <img
+      src="/icon.png"
+      alt="DeskTiles"
+      width={112}
+      height={112}
+      className="mx-auto mb-8 rounded-[24px]"
+    />
   )
 }
 
@@ -87,25 +86,19 @@ export default function Hero() {
         {/* App icon */}
         <AppIcon />
 
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-white border border-[#D2D2D7]/70 rounded-full px-4 py-1.5 mb-6 shadow-sm">
-          <div className="w-1.5 h-1.5 rounded-full bg-[#34C759]" />
-          <span className="text-[13px] text-[#1D1D1F]">DeskTiles PRO — Available now</span>
-        </div>
-
-        {/* Massive headline — DockDoor style */}
-        <h1 className="font-bold tracking-[-0.05em] text-[#1D1D1F] leading-[0.95] mb-3"
-            style={{ fontSize: 'clamp(72px, 11vw, 140px)' }}>
-          Projects.
-        </h1>
-        <h1 className="font-bold tracking-[-0.05em] leading-[0.95] mb-8"
-            style={{ fontSize: 'clamp(72px, 11vw, 140px)', color: '#7BA8C4' }}>
-          Not folders.
+        {/* Headline — una sola línea, "Projects." animado + "Not folders." negro fijo */}
+        <h1
+          className="font-bold tracking-[-0.05em] leading-[1.0] mb-8 whitespace-nowrap"
+          style={{ fontSize: 'clamp(36px, 6vw, 80px)' }}
+        >
+          <span className="text-animated-gradient">Projects.</span>
+          {' '}
+          <span style={{ color: '#1D1D1F' }}>Not folders.</span>
         </h1>
 
-        {/* Sub */}
+        {/* Sub — 20% más grande */}
         <p className="font-semibold tracking-[-0.02em] text-[#1D1D1F] mb-5"
-           style={{ fontSize: 'clamp(22px, 3vw, 34px)' }}>
+           style={{ fontSize: 'clamp(26px, 3.6vw, 41px)' }}>
           Desktop. Upgraded.
         </p>
 
@@ -115,25 +108,7 @@ export default function Hero() {
           designed for focus, context, and fast access.
         </p>
 
-        {/* CTAs */}
-        <div className="flex items-center justify-center gap-3 mb-4">
-          <a
-            href="#download"
-            className="bg-[#1D1D1F] text-white px-8 py-3.5 rounded-full text-[16px] font-medium hover:bg-[#3D3D3F] transition-colors"
-          >
-            Download Pro
-          </a>
-          <a
-            href="#how-it-works"
-            className="border border-[#D2D2D7] text-[#1D1D1F] px-8 py-3.5 rounded-full text-[16px] font-medium hover:bg-[#F5F5F5] transition-colors"
-          >
-            See How it Works
-          </a>
-        </div>
-
-        <p className="text-[13px] text-[#6E6E73] mb-20">
-          macOS 13 Ventura and later &nbsp;·&nbsp; No cloud &nbsp;·&nbsp; One-time purchase
-        </p>
+        <div className="mb-20" />
 
         {/* Hero desktop mockup */}
         <HeroDesktop />
