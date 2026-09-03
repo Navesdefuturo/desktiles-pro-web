@@ -2,7 +2,7 @@
 
 const features = [
   'Unlimited project tiles',
-  'Custom colors, fonts & layouts',
+  'Custom colors, fonts & layouts — Edit Style',
   'All preset templates (Eisenhower, Designer, Developer…)',
   'Keyboard shortcuts & Quick Look',
   'Native drag & drop — real Finder files',
@@ -28,17 +28,23 @@ export default function Pricing() {
           <div className="absolute top-0 right-0 w-80 h-80 bg-gradient-to-bl from-[#A896D8]/20 to-transparent rounded-full -translate-y-20 translate-x-20 pointer-events-none" />
 
           {/* Launch badge */}
-          <div className="inline-flex items-center gap-2 bg-[#A896D8]/20 border border-[#A896D8]/30 rounded-full px-3.5 py-1 mb-8">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#A896D8]" />
-            <span className="text-[12px] font-semibold text-[#A896D8] tracking-wide">Launch price</span>
+          <div className="inline-flex items-center gap-2 bg-[#FBBF24]/15 border border-[#FBBF24]/30 rounded-full px-3.5 py-1 mb-8">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#FBBF24]" />
+            <span className="text-[12px] font-semibold text-[#FBBF24] tracking-wide">Launch offer — limited time</span>
           </div>
 
           {/* Price */}
-          <div className="flex items-baseline gap-3 mb-2">
+          <div className="flex items-baseline gap-4 mb-2">
+            <span
+              className="text-[28px] font-medium text-white/30 line-through"
+              style={{ textDecorationColor: 'rgba(255,255,255,0.25)' }}
+            >
+              €19.99
+            </span>
             <span className="text-[72px] font-bold text-white tracking-[-0.04em] leading-none">€14.99</span>
           </div>
           <p className="text-[15px] text-white/40 mb-10">
-            Price goes to €19.99 after launch &nbsp;·&nbsp; One-time purchase
+            Regular price €19.99 after launch &nbsp;·&nbsp; One-time purchase, no subscription
           </p>
 
           {/* Features */}
