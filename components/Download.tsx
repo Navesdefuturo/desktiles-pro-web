@@ -4,7 +4,7 @@ export default function Download() {
       <div className="max-w-[640px] mx-auto">
         <h2
           className="font-bold tracking-[-0.04em] text-[#1D1D1F] mb-6 leading-[1.05]"
-          style={{ fontSize: 'clamp(36px,5.5vw,68px)' }}
+          style={{ fontSize: 'clamp(34px,5vw,64px)' }}
         >
           The desktop experience
           <br />
@@ -14,26 +14,20 @@ export default function Download() {
         </h2>
 
         <p className="text-[17px] text-[#6E6E73] mb-12 leading-relaxed">
-          Available for macOS Ventura and later.
+          macOS Ventura, Sonoma & Sequoia.
+          <br />
+          Works entirely on your Mac. No cloud. No account.
         </p>
 
-        <div className="flex items-center justify-center gap-3 mb-8">
-          <a
-            href="#"
-            className="border border-[#D2D2D7] text-[#1D1D1F] px-7 py-3.5 rounded-full text-[16px] font-medium hover:bg-[#F0F0F0] transition-colors"
-          >
-            Download Free
-          </a>
-          <a
-            href="#pricing"
-            className="bg-[#1D1D1F] text-white px-7 py-3.5 rounded-full text-[16px] font-medium hover:bg-[#3D3D3F] transition-colors"
-          >
-            Buy Pro — $39/year
-          </a>
-        </div>
+        <a
+          href="#pricing"
+          className="inline-block bg-[#1D1D1F] text-white px-10 py-4 rounded-full text-[17px] font-semibold hover:bg-[#3D3D3F] transition-colors"
+        >
+          Get DeskTiles — €14.99
+        </a>
 
-        <p className="text-[13px] text-[#6E6E73] leading-relaxed">
-          One-time purchase available &nbsp;·&nbsp; No subscriptions &nbsp;·&nbsp; Works entirely on your Mac
+        <p className="text-[13px] text-[#8E8E93] mt-6 leading-relaxed">
+          One-time purchase &nbsp;·&nbsp; 30-day money-back guarantee &nbsp;·&nbsp; All future updates
         </p>
       </div>
     </section>

@@ -31,22 +31,44 @@ body {
 
 .text-animated-gradient {
   background: linear-gradient(
-    90deg,
-    #7BA8C4,
-    #A896D8,
-    #7BC4A8,
-    #C4A87B,
-    #7BA8C4
+    135deg,
+    #C084FC,
+    #818CF8,
+    #38BDF8,
+    #34D399,
+    #FBBF24,
+    #F87171,
+    #E879F9,
+    #C084FC
   );
-  background-size: 300% 100%;
+  background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: gradientShift 5s ease-in-out infinite;
+  animation: haloShift 6s ease-in-out infinite;
+  filter: drop-shadow(0 0 32px rgba(129, 140, 248, 0.35));
 }
 
-@keyframes gradientShift {
-  0%   { background-position: 0% 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+@keyframes haloShift {
+  0%   { background-position: 0% 0%; }
+  33%  { background-position: 100% 50%; }
+  66%  { background-position: 50% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+/* Carousel */
+.hero-slide {
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.hero-slide-enter {
+  opacity: 0;
+  transform: translateY(12px);
+}
+.hero-slide-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hero-slide-exit {
+  opacity: 0;
+  transform: translateY(-12px);
 }

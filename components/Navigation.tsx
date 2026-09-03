@@ -24,11 +24,12 @@ export default function Navigation() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/85 backdrop-blur-xl border-b border-[#D2D2D7]/50'
+          ? 'bg-white/88 backdrop-blur-xl border-b border-[#D2D2D7]/50 shadow-sm'
           : 'bg-transparent'
       }`}
     >
       <div className="max-w-[1200px] mx-auto px-6 h-14 flex items-center justify-between">
+        {/* Logo */}
         <div className="flex items-center gap-2 shrink-0">
           <div className="w-7 h-7 rounded-[7px] bg-gradient-to-br from-[#C8D8EC] via-[#AABAD6] to-[#8AA8C8] flex items-center justify-center shadow-sm">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -43,7 +44,8 @@ export default function Navigation() {
           </span>
         </div>
 
-        <div className="hidden md:flex items-center gap-8">
+        {/* Desktop nav links */}
+        <div className="hidden md:flex items-center gap-7">
           {links.map((l) => (
             <a
               key={l.href}
@@ -55,13 +57,15 @@ export default function Navigation() {
           ))}
         </div>
 
+        {/* CTA */}
         <a
-          href="#download"
+          href="#pricing"
           className="hidden md:inline-flex bg-[#1D1D1F] text-white text-[13px] font-medium px-5 py-2 rounded-full hover:bg-[#3D3D3F] transition-colors shrink-0"
         >
-          Download Pro
+          Get DeskTiles — €14.99
         </a>
 
+        {/* Mobile hamburger */}
         <button
           className="md:hidden text-[#1D1D1F] p-1"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -75,8 +79,9 @@ export default function Navigation() {
         </button>
       </div>
 
+      {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-xl border-t border-[#D2D2D7]/40 px-6 py-5 flex flex-col gap-5">
+        <div className="md:hidden bg-white/97 backdrop-blur-xl border-t border-[#D2D2D7]/40 px-6 py-5 flex flex-col gap-5">
           {links.map((l) => (
             <a
               key={l.href}
@@ -88,10 +93,10 @@ export default function Navigation() {
             </a>
           ))}
           <a
-            href="#download"
+            href="#pricing"
             className="bg-[#1D1D1F] text-white text-[15px] font-medium px-4 py-2.5 rounded-full text-center"
           >
-            Download Pro
+            Get DeskTiles — €14.99
           </a>
         </div>
       )}
