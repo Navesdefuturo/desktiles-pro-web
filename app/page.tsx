@@ -4,7 +4,9 @@ import VideoSection from '@/components/VideoSection'
 import WhatItIs from '@/components/WhatItIs'
 import ProductShowcase from '@/components/ProductShowcase'
 import AutoTiles from '@/components/AutoTiles'
+import PeopleSection from '@/components/PeopleSection'
 import SocialProof from '@/components/SocialProof'
+import LifestyleSection from '@/components/LifestyleSection'
 import Details from '@/components/Details'
 import Pricing from '@/components/Pricing'
 import FAQ from '@/components/FAQ'
@@ -21,7 +23,9 @@ export default function Home() {
       <WhatItIs />
       <ProductShowcase />
       <AutoTiles />
+      <PeopleSection />
       <SocialProof />
+      <LifestyleSection />
       <Details />
       <Pricing />
       <FAQ />
