@@ -61,7 +61,7 @@ export default function Navigation() {
           href="#pricing"
           className="hidden md:inline-flex bg-[#1D1D1F] text-white text-[13px] font-medium px-5 py-2 rounded-full hover:bg-[#3D3D3F] transition-colors shrink-0"
         >
-          Get DeskTiles — €14.99
+          Launch offer — €14.99
         </a>
 
         {/* Mobile hamburger */}
@@ -95,7 +95,7 @@ export default function Navigation() {
             href="#pricing"
             className="bg-[#1D1D1F] text-white text-[15px] font-medium px-4 py-2.5 rounded-full text-center"
           >
-            Get DeskTiles — €14.99
+            Launch offer — €14.99
           </a>
         </div>
       )}

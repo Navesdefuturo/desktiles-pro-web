@@ -192,6 +192,9 @@ export default function Hero() {
         </div>
 
         {/* CTAs */}
+        <p className="text-[12px] font-semibold text-[#92620A] uppercase tracking-wide mb-3">
+          Launch offer · Limited time
+        </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-3">
           <a
             href="#pricing"
@@ -208,7 +211,7 @@ export default function Hero() {
         </div>
 
         <p className="text-[13px] text-[#8E8E93] mb-20">
-          macOS Sequoia & Tahoe &nbsp;·&nbsp; One-time purchase &nbsp;·&nbsp; No cloud
+          macOS Sequoia · Tahoe · Golden Gate &nbsp;·&nbsp; One-time purchase &nbsp;·&nbsp; No cloud
         </p>
 
         <HeroDesktop />

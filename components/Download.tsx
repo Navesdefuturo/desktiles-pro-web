@@ -12,7 +12,7 @@ export default function Download() {
         </h2>
 
         <p className="text-[17px] text-[#6E6E73] mb-12 leading-relaxed">
-          macOS Sequoia & Tahoe.
+          macOS Sequoia, Tahoe & Golden Gate.
           <br />
           Works entirely on your Mac. No cloud. No account.
         </p>
