@@ -1,6 +1,6 @@
 const testimonials = [
   {
-    quote: 'Feels like something macOS has always been missing. The moment you try it, you wonder how you worked without it.',
+    quote: 'The moment you try it, you wonder how you ever worked without it. It just makes sense.',
     author: 'Marc T.',
     role: 'Freelance designer',
   },
