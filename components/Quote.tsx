@@ -2,7 +2,7 @@ export default function Quote() {
   return (
     <section className="relative py-[120px] px-6 bg-[#1D1D1F] overflow-hidden">
 
-      {/* Abstract neural / brain pattern — muy atenuado */}
+      {/* Neural network — más visible, más nodos */}
       <svg
         aria-hidden="true"
         className="absolute inset-0 w-full h-full pointer-events-none"
@@ -10,34 +10,45 @@ export default function Quote() {
         preserveAspectRatio="xMidYMid slice"
         fill="none"
       >
-        {/* Connection lines */}
-        <line x1="200" y1="80"  x2="380" y2="160" stroke="white" strokeWidth="0.6" strokeOpacity="0.06"/>
-        <line x1="380" y1="160" x2="520" y2="90"  stroke="white" strokeWidth="0.6" strokeOpacity="0.06"/>
-        <line x1="520" y1="90"  x2="700" y2="130" stroke="white" strokeWidth="0.6" strokeOpacity="0.06"/>
-        <line x1="700" y1="130" x2="760" y2="280" stroke="white" strokeWidth="0.6" strokeOpacity="0.06"/>
-        <line x1="380" y1="160" x2="450" y2="300" stroke="white" strokeWidth="0.6" strokeOpacity="0.06"/>
-        <line x1="450" y1="300" x2="600" y2="320" stroke="white" strokeWidth="0.6" strokeOpacity="0.06"/>
-        <line x1="600" y1="320" x2="760" y2="280" stroke="white" strokeWidth="0.6" strokeOpacity="0.06"/>
-        <line x1="200" y1="80"  x2="140" y2="220" stroke="white" strokeWidth="0.6" strokeOpacity="0.06"/>
-        <line x1="140" y1="220" x2="450" y2="300" stroke="white" strokeWidth="0.6" strokeOpacity="0.06"/>
-        <line x1="520" y1="90"  x2="600" y2="320" stroke="white" strokeWidth="0.6" strokeOpacity="0.05"/>
-        <line x1="760" y1="280" x2="820" y2="160" stroke="white" strokeWidth="0.6" strokeOpacity="0.05"/>
-        <line x1="820" y1="160" x2="700" y2="130" stroke="white" strokeWidth="0.6" strokeOpacity="0.05"/>
-        <line x1="80"  y1="330" x2="140" y2="220" stroke="white" strokeWidth="0.6" strokeOpacity="0.05"/>
-        <line x1="380" y1="160" x2="300" y2="310" stroke="white" strokeWidth="0.6" strokeOpacity="0.04"/>
-        <line x1="300" y1="310" x2="450" y2="300" stroke="white" strokeWidth="0.6" strokeOpacity="0.04"/>
+        {/* Lines */}
+        <line x1="60"  y1="60"  x2="200" y2="120" stroke="white" strokeWidth="0.8" strokeOpacity="0.12"/>
+        <line x1="200" y1="120" x2="340" y2="55"  stroke="white" strokeWidth="0.8" strokeOpacity="0.12"/>
+        <line x1="340" y1="55"  x2="480" y2="100" stroke="white" strokeWidth="0.8" strokeOpacity="0.12"/>
+        <line x1="480" y1="100" x2="620" y2="50"  stroke="white" strokeWidth="0.8" strokeOpacity="0.12"/>
+        <line x1="620" y1="50"  x2="760" y2="110" stroke="white" strokeWidth="0.8" strokeOpacity="0.12"/>
+        <line x1="760" y1="110" x2="860" y2="70"  stroke="white" strokeWidth="0.8" strokeOpacity="0.10"/>
+
+        <line x1="60"  y1="60"  x2="130" y2="200" stroke="white" strokeWidth="0.8" strokeOpacity="0.11"/>
+        <line x1="130" y1="200" x2="200" y2="120" stroke="white" strokeWidth="0.8" strokeOpacity="0.11"/>
+        <line x1="200" y1="120" x2="280" y2="240" stroke="white" strokeWidth="0.8" strokeOpacity="0.11"/>
+        <line x1="280" y1="240" x2="340" y2="55"  stroke="white" strokeWidth="0.8" strokeOpacity="0.09"/>
+        <line x1="280" y1="240" x2="420" y2="300" stroke="white" strokeWidth="0.8" strokeOpacity="0.11"/>
+        <line x1="420" y1="300" x2="480" y2="100" stroke="white" strokeWidth="0.8" strokeOpacity="0.10"/>
+        <line x1="420" y1="300" x2="560" y2="330" stroke="white" strokeWidth="0.8" strokeOpacity="0.12"/>
+        <line x1="560" y1="330" x2="680" y2="280" stroke="white" strokeWidth="0.8" strokeOpacity="0.12"/>
+        <line x1="680" y1="280" x2="760" y2="110" stroke="white" strokeWidth="0.8" strokeOpacity="0.11"/>
+        <line x1="680" y1="280" x2="800" y2="340" stroke="white" strokeWidth="0.8" strokeOpacity="0.10"/>
+        <line x1="800" y1="340" x2="860" y2="70"  stroke="white" strokeWidth="0.8" strokeOpacity="0.08"/>
+        <line x1="130" y1="200" x2="280" y2="240" stroke="white" strokeWidth="0.8" strokeOpacity="0.10"/>
+        <line x1="480" y1="100" x2="560" y2="330" stroke="white" strokeWidth="0.8" strokeOpacity="0.08"/>
+        <line x1="620" y1="50"  x2="680" y2="280" stroke="white" strokeWidth="0.8" strokeOpacity="0.09"/>
+        <line x1="340" y1="55"  x2="420" y2="300" stroke="white" strokeWidth="0.8" strokeOpacity="0.08"/>
+        <line x1="560" y1="330" x2="760" y2="110" stroke="white" strokeWidth="0.8" strokeOpacity="0.09"/>
+
         {/* Nodes */}
-        <circle cx="200" cy="80"  r="3.5" fill="white" fillOpacity="0.08"/>
-        <circle cx="380" cy="160" r="5"   fill="white" fillOpacity="0.09"/>
-        <circle cx="520" cy="90"  r="3"   fill="white" fillOpacity="0.07"/>
-        <circle cx="700" cy="130" r="4"   fill="white" fillOpacity="0.08"/>
-        <circle cx="760" cy="280" r="4.5" fill="white" fillOpacity="0.08"/>
-        <circle cx="450" cy="300" r="3.5" fill="white" fillOpacity="0.07"/>
-        <circle cx="600" cy="320" r="3"   fill="white" fillOpacity="0.06"/>
-        <circle cx="140" cy="220" r="3"   fill="white" fillOpacity="0.07"/>
-        <circle cx="820" cy="160" r="2.5" fill="white" fillOpacity="0.06"/>
-        <circle cx="80"  cy="330" r="2"   fill="white" fillOpacity="0.05"/>
-        <circle cx="300" cy="310" r="2.5" fill="white" fillOpacity="0.05"/>
+        <circle cx="60"  cy="60"  r="4"   fill="white" fillOpacity="0.18"/>
+        <circle cx="200" cy="120" r="5.5" fill="white" fillOpacity="0.20"/>
+        <circle cx="340" cy="55"  r="4"   fill="white" fillOpacity="0.16"/>
+        <circle cx="480" cy="100" r="5"   fill="white" fillOpacity="0.18"/>
+        <circle cx="620" cy="50"  r="3.5" fill="white" fillOpacity="0.15"/>
+        <circle cx="760" cy="110" r="5"   fill="white" fillOpacity="0.18"/>
+        <circle cx="860" cy="70"  r="3"   fill="white" fillOpacity="0.13"/>
+        <circle cx="130" cy="200" r="4"   fill="white" fillOpacity="0.16"/>
+        <circle cx="280" cy="240" r="5"   fill="white" fillOpacity="0.18"/>
+        <circle cx="420" cy="300" r="5.5" fill="white" fillOpacity="0.20"/>
+        <circle cx="560" cy="330" r="4"   fill="white" fillOpacity="0.16"/>
+        <circle cx="680" cy="280" r="5"   fill="white" fillOpacity="0.18"/>
+        <circle cx="800" cy="340" r="3.5" fill="white" fillOpacity="0.14"/>
       </svg>
 
       {/* Content */}
@@ -48,7 +59,6 @@ export default function Quote() {
           the way I actually think.&rdquo;
         </p>
 
-        {/* Secondary quote */}
         <div className="border-t border-white/10 pt-10 mt-2">
           <p className="text-[17px] text-white/50 leading-relaxed max-w-[540px] mx-auto mb-2">
             &ldquo;I open a project tile and everything I need is right there.

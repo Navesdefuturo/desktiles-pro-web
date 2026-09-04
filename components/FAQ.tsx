@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: 'Does it work with my iCloud / Dropbox files?',
-    a: 'Yes. DeskTiles works with any file accessible from your Mac — Finder, iCloud Drive, Dropbox, OneDrive, external drives. If Finder can see it, DeskTiles can tile it.',
+    a: 'Yes — with one thing worth knowing. A tile keeps its files together in one real folder on your Mac, so dropping a file into a tile moves it there: a file from iCloud Drive, Dropbox or OneDrive leaves that folder and stops syncing. For anything that has to stay put — shared folders, synced projects — drop an alias instead (⌥⌘-drag it from Finder). The alias sits in the tile, opens the file with a double-click, and the original never moves.',
   },
   {
     q: 'Does my data go anywhere?',

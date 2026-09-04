@@ -115,12 +115,6 @@ export default function Hero() {
 
         <AppIcon />
 
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-white/80 border border-[#D2D2D7]/60 rounded-full px-4 py-1.5 mb-8 shadow-sm backdrop-blur-sm">
-          <span className="w-2 h-2 rounded-full bg-green-500" style={{ boxShadow: '0 0 0 3px rgba(34,197,94,0.25)' }} />
-          <span className="text-[13px] text-[#6E6E73] font-medium">DeskTiles — Available now</span>
-        </div>
-
         {/* Carousel headline */}
         <div
           style={{
