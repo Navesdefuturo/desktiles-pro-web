@@ -33,7 +33,7 @@ export default function LifestyleSection() {
         {/* Image — right */}
         <div className="relative h-[420px] md:h-[560px] order-1 md:order-2">
           <img
-            src="/lifestyle-imac.png"
+            src="/desktiles-imac-creative-workspace.png"
             alt="Working at Mac with DeskTiles"
             className="absolute inset-0 w-full h-full object-cover object-center"
           />

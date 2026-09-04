@@ -3,9 +3,9 @@ export default function Quote() {
     <section className="py-[120px] px-6 bg-[#1D1D1F]">
       <div className="max-w-[800px] mx-auto text-center">
         <p className="text-[clamp(26px,4.5vw,50px)] font-semibold text-white leading-[1.25] tracking-[-0.02em] mb-10">
-          &ldquo;Feels like something macOS
+          &ldquo;Finally, a desktop that works
           <br />
-          has always been missing.&rdquo;
+          the way I actually think.&rdquo;
         </p>
 
         {/* Secondary quote */}

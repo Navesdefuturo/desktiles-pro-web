@@ -3,7 +3,7 @@ export default function PeopleSection() {
     <section className="relative w-full overflow-hidden" style={{ minHeight: '560px' }}>
       {/* Background image */}
       <img
-        src="/people-desktop.png"
+        src="/desktiles-mac-projects-desktop.png"
         alt=""
         className="absolute inset-0 w-full h-full object-cover object-center"
         aria-hidden="true"

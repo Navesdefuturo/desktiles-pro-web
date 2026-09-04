@@ -25,6 +25,11 @@ export default function Footer() {
           ))}
         </nav>
       </div>
+      <div className="max-w-[1100px] mx-auto mt-6 pt-6 border-t border-[#D2D2D7]/30">
+        <p className="text-[11px] text-[#8E8E93] leading-relaxed text-center">
+          Mac, macOS, Finder, Sequoia, Tahoe, Golden Gate and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. DeskTiles is an independent product and is not affiliated with or endorsed by Apple Inc.
+        </p>
+      </div>
     </footer>
   )
 }
