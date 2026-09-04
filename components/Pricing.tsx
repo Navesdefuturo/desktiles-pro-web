@@ -14,7 +14,7 @@ const features = [
 export default function Pricing() {
   return (
     <section id="pricing" className="py-[120px] px-6 border-t border-[#D2D2D7]/40">
-      <div className="max-w-[640px] mx-auto">
+      <div className="max-w-[520px] mx-auto">
         <h2 className="text-[clamp(32px,5vw,52px)] font-semibold tracking-[-0.02em] text-[#1D1D1F] text-center mb-3">
           Simple pricing.
         </h2>
@@ -23,7 +23,7 @@ export default function Pricing() {
         </p>
 
         {/* Single pricing card */}
-        <div className="rounded-3xl bg-[#1D1D1F] p-10 relative overflow-hidden">
+        <div className="rounded-3xl bg-[#1D1D1F] p-8 relative overflow-hidden">
           {/* Background glow */}
           <div className="absolute top-0 right-0 w-80 h-80 bg-gradient-to-bl from-[#A896D8]/20 to-transparent rounded-full -translate-y-20 translate-x-20 pointer-events-none" />
 
@@ -41,14 +41,14 @@ export default function Pricing() {
             >
               €19.99
             </span>
-            <span className="text-[72px] font-bold text-white tracking-[-0.04em] leading-none">€14.99</span>
+            <span className="text-[60px] font-bold text-white tracking-[-0.04em] leading-none">€14.99</span>
           </div>
           <p className="text-[15px] text-white/40 mb-10">
             Regular price €19.99 after launch &nbsp;·&nbsp; One-time purchase, no subscription
           </p>
 
           {/* Features */}
-          <ul className="space-y-4 mb-10">
+          <ul className="space-y-3 mb-8">
             {features.map((f) => (
               <li key={f} className="flex items-start gap-3 text-[15px]">
                 <span className="w-5 h-5 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 mt-0.5">
