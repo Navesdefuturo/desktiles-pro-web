@@ -4,7 +4,6 @@ import VideoSection from '@/components/VideoSection'
 import WhatItIs from '@/components/WhatItIs'
 import ProductShowcase from '@/components/ProductShowcase'
 import AutoTiles from '@/components/AutoTiles'
-import DesktopLiving from '@/components/DesktopLiving'
 import PeopleSection from '@/components/PeopleSection'
 import SocialProof from '@/components/SocialProof'
 import LifestyleSection from '@/components/LifestyleSection'
@@ -24,7 +23,6 @@ export default function Home() {
       <WhatItIs />
       <ProductShowcase />
       <AutoTiles />
-      <DesktopLiving />
       <PeopleSection />
       <SocialProof />
       <LifestyleSection />

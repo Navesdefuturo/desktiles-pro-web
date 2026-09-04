@@ -11,18 +11,36 @@ const cards = [
 
 export default function Details() {
   return (
-    <section className="py-[120px] px-6 border-t border-[#D2D2D7]/40">
-      <div className="max-w-[1100px] mx-auto">
-        <h2 className="text-[clamp(28px,4.5vw,48px)] font-semibold tracking-[-0.02em] text-[#1D1D1F] text-center mb-4">
-          Built for people who live
-          <br />
-          on their desktop.
-        </h2>
-        <p className="text-[17px] text-[#6E6E73] text-center mb-20 max-w-[400px] mx-auto">
-          Every feature earned its place. Nothing here by accident.
-        </p>
+    <section className="border-t border-[#D2D2D7]/40">
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+      {/* Hero image — man inside Mac desktop */}
+      <div className="relative w-full overflow-hidden" style={{ minHeight: '420px' }}>
+        <img
+          src="/desktiles-mac-projects-desktop.png"
+          alt="Mac power user with DeskTiles desktop projects"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+        />
+        {/* Bottom fade to blend into the cards section */}
+        <div
+          className="absolute inset-0"
+          style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(249,249,249,1) 100%)' }}
+        />
+        {/* Text overlay */}
+        <div className="relative max-w-[1100px] mx-auto px-6 pt-20 pb-10 text-center">
+          <h2 className="text-[clamp(28px,4.5vw,52px)] font-semibold tracking-[-0.02em] text-[#1D1D1F] mb-4 leading-[1.1]">
+            Built for people who live
+            <br />
+            on their desktop.
+          </h2>
+          <p className="text-[17px] text-[#6E6E73] max-w-[400px] mx-auto">
+            Every feature earned its place. Nothing here by accident.
+          </p>
+        </div>
+      </div>
+
+      {/* Feature cards */}
+      <div className="px-6 pb-[120px]" style={{ background: '#F9F9F9' }}>
+        <div className="max-w-[1100px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-3">
           {cards.map((card) => (
             <div
               key={card.title}
@@ -35,6 +53,7 @@ export default function Details() {
           ))}
         </div>
       </div>
+
     </section>
   )
 }
