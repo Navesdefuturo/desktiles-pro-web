@@ -17,9 +17,9 @@ const slides = [
   },
   {
     line1: 'The Desktop, Reimagined.',
-    line2: 'Your Desktop. Your Way.',
+    line2: 'Your Rules. Your Way.',
     sub: 'From Chaos to Clarity.',
-    body: 'Custom tiles, your colors, your layouts. A desktop that works the way you think — not the way Apple decided.',
+    body: 'Custom tiles, your colors, your layouts. A desktop that works the way you think — not the way they decided.',
   },
 ]
 
@@ -103,7 +103,7 @@ export default function Hero() {
         setCurrent((c) => (c + 1) % slides.length)
         setVisible(true)
       }, 500)
-    }, 4500)
+    }, 7500)
     return () => clearInterval(interval)
   }, [])
 
@@ -208,7 +208,7 @@ export default function Hero() {
         </div>
 
         <p className="text-[13px] text-[#8E8E93] mb-20">
-          macOS Ventura → Sequoia &nbsp;·&nbsp; One-time purchase &nbsp;·&nbsp; No cloud
+          macOS Sequoia & Tahoe &nbsp;·&nbsp; One-time purchase &nbsp;·&nbsp; No cloud
         </p>
 
         <HeroDesktop />

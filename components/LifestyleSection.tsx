@@ -19,6 +19,9 @@ export default function LifestyleSection() {
           <p className="text-[16px] text-[#6E6E73] leading-relaxed mb-8 max-w-[380px]">
             DeskTiles is for anyone who spends their day on a Mac and wants their workspace to feel intentional — not accidental.
           </p>
+          <p className="text-[12px] font-semibold text-[#92620A] uppercase tracking-wide mb-3">
+            Launch offer · Limited time
+          </p>
           <a
             href="#pricing"
             className="inline-flex items-center gap-2 bg-[#1D1D1F] text-white text-[14px] font-medium px-6 py-3 rounded-full hover:bg-[#3D3D3F] transition-colors"

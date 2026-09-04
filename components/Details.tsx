@@ -6,7 +6,7 @@ const cards = [
   { icon: '☁️', title: 'No cloud. Ever.', desc: 'Everything stays on your Mac. No sync, no account, no server. Your data is yours.' },
   { icon: '📂', title: 'Real files', desc: 'No virtual layer. DeskTiles points to actual files on your disk — Finder, iCloud, Dropbox, anywhere.' },
   { icon: '⌨️', title: 'Full keyboard', desc: 'Navigate, expand, open, rename — all from the keyboard. Power users feel right at home.' },
-  { icon: '🍎', title: 'Sequoia ready', desc: 'Built and tested on macOS Sequoia. Compatible from Ventura (13) to Sequoia (15) and beyond.' },
+  { icon: '🍎', title: 'Sequoia & Tahoe', desc: 'Built and tested on macOS Sequoia and Tahoe. Runs on macOS 15 and later.' },
 ]
 
 export default function Details() {

@@ -29,8 +29,8 @@ export default function WhatItIs() {
             <span style={{ color: '#7BA8C4' }}>DeskTiles organizes your work.</span>
           </h2>
           <p className="text-[17px] text-[#6E6E73] max-w-[480px] mx-auto leading-relaxed">
-            Stacks sort by type. Finder sorts by name. Neither sorts by you.
-            DeskTiles is the first desktop tool that works the way you actually think.
+            Stacks sort by type. Finder sorts by name.
+            DeskTiles sorts by you — by project, by client, by context.
           </p>
         </div>
 

@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: 'What macOS versions does it support?',
-    a: 'DeskTiles runs on macOS Ventura (13), Sonoma (14), and Sequoia (15). Built and tested on Sequoia.',
+    a: 'DeskTiles runs on macOS Sequoia (15) and Tahoe (16). Built and tested on the latest macOS.',
   },
   {
     q: 'Does it work with my iCloud / Dropbox files?',
