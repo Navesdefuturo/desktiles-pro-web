@@ -2,6 +2,7 @@ import Navigation from '@/components/Navigation'
 import Hero from '@/components/Hero'
 import VideoSection from '@/components/VideoSection'
 import WhatItIs from '@/components/WhatItIs'
+import DesktopLiving from '@/components/DesktopLiving'
 import ProductShowcase from '@/components/ProductShowcase'
 import AutoTiles from '@/components/AutoTiles'
 import PeopleSection from '@/components/PeopleSection'
@@ -21,6 +22,7 @@ export default function Home() {
       <Hero />
       <VideoSection />
       <WhatItIs />
+      <DesktopLiving />
       <ProductShowcase />
       <AutoTiles />
       <PeopleSection />
