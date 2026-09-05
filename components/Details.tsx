@@ -4,9 +4,9 @@ const cards = [
   { icon: '⌘', title: 'Native macOS', desc: 'Quick Look, drag & drop, right-click menus, keyboard shortcuts. Zero learning curve.' },
   { icon: '⚡', title: 'Instant animations', desc: 'GPU-accelerated. Every expand and collapse is fluid and immediate.' },
   { icon: '☁️', title: 'No cloud. Ever.', desc: 'Everything stays on your Mac. No sync, no account, no server. Your data is yours.' },
-  { icon: '📂', title: 'Real files', desc: 'No virtual layer. DeskTiles points to actual files on your disk — Finder, iCloud, Dropbox, anywhere.' },
+  { icon: '📂', title: 'Real files', desc: 'No database, no hidden container. Each tile is a real folder on your disk you can open in Finder any time. Files you drop in move into it, so use an alias for anything that must stay where it is.' },
   { icon: '⌨️', title: 'Full keyboard', desc: 'Navigate, expand, open, rename — all from the keyboard. Power users feel right at home.' },
-  { icon: '🍎', title: 'Always up to date', desc: 'Built and tested on the latest macOS. Runs on Sequoia, Tahoe & Golden Gate.' },
+  { icon: '🍎', title: 'Always up to date', desc: 'Built and tested on the latest macOS. Runs on Sonoma, Sequoia, Tahoe & Golden Gate.' },
 ]
 
 export default function Details() {

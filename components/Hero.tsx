@@ -205,7 +205,7 @@ export default function Hero() {
         </div>
 
         <p className="text-[13px] text-[#8E8E93] mb-20">
-          macOS Sequoia · Tahoe · Golden Gate &nbsp;·&nbsp; One-time purchase &nbsp;·&nbsp; No cloud
+          macOS Sonoma · Sequoia · Tahoe · Golden Gate &nbsp;·&nbsp; One-time purchase &nbsp;·&nbsp; No cloud
         </p>
 
         <HeroDesktop />

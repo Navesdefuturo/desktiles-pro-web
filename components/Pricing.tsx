@@ -6,7 +6,7 @@ const features = [
   'All preset templates (Eisenhower, Designer, Developer…)',
   'Keyboard shortcuts & Quick Look',
   'Native drag & drop — real Finder files',
-  'macOS Sequoia, Tahoe & Golden Gate',
+  'macOS Sonoma, Sequoia, Tahoe & Golden Gate',
   'All future updates included',
   'No cloud · No account · No subscription',
 ]

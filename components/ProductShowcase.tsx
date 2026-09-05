@@ -266,7 +266,7 @@ const features = [
   {
     label: 'REAL FILES',
     title: 'Your files stay yours.',
-    body: 'DeskTiles works with real Finder files — not shortcuts, databases, or cloud containers. No subscriptions. No sync engine. No vendor lock-in.',
+    body: 'DeskTiles works with real Finder files — not a database, not a cloud container. No subscriptions. No sync engine. No vendor lock-in.',
     imageLeft: false,
     mockup: <RealFilesMockup />,
   },
