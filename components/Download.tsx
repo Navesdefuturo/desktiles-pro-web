@@ -46,7 +46,7 @@ export default function Download() {
           </a>
 
           <p className="text-[13px] text-[#8E8E93] mt-5 leading-relaxed">
-            One-time purchase &nbsp;·&nbsp; 30-day money-back &nbsp;·&nbsp; All future updates
+            One-time purchase &nbsp;·&nbsp; All future updates included
           </p>
         </div>
 

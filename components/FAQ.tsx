@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: 'What if I change my mind?',
-    a: '30-day money-back guarantee, no questions asked. Just email hello@desktiles.app.',
+    a: 'Write to hello@desktiles.app and we\'ll sort it out.',
   },
 ]
 

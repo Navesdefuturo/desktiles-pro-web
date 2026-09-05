@@ -72,8 +72,6 @@ export default function Pricing() {
 
         {/* Guarantee */}
         <p className="text-[13px] text-[#8E8E93] text-center mt-8 leading-relaxed">
-          30-day money-back guarantee, no questions asked.
-          <br />
           Your files never leave your Mac.
         </p>
       </div>
