@@ -1,4 +1,29 @@
+import type { WithContext, SoftwareApplication } from 'schema-dts'
 import Navigation from '@/components/Navigation'
+
+const jsonLd: WithContext<SoftwareApplication> = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'DeskTiles',
+  description: 'Organize your Mac desktop by project, not by folder. Custom project tiles — expand, collapse, drag, rename. Native macOS. No cloud. No subscription.',
+  url: 'https://desktiles.app',
+  applicationCategory: 'ProductivityApplication',
+  operatingSystem: 'macOS 14, macOS 15, macOS 26, macOS 27',
+  offers: {
+    '@type': 'Offer',
+    price: '14.99',
+    priceCurrency: 'EUR',
+    priceValidUntil: '2026-12-31',
+    availability: 'https://schema.org/InStock',
+  },
+  author: {
+    '@type': 'Organization',
+    name: 'DeskTiles',
+    url: 'https://desktiles.app',
+    email: 'hello@desktiles.app',
+  },
+  releaseNotes: 'https://desktiles.app/changelog',
+}
 import Hero from '@/components/Hero'
 import VideoSection from '@/components/VideoSection'
 import WhatItIs from '@/components/WhatItIs'
@@ -18,6 +43,10 @@ import Footer from '@/components/Footer'
 export default function Home() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navigation />
       <Hero />
       <VideoSection />
