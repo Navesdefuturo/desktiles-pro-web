@@ -20,7 +20,7 @@ export async function GET() {
         type="application/octet-stream"
         sparkle:edSignature="PLACEHOLDER_REPLACE_WITH_REAL_SIGNATURE"
       />
-      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
     </item>
   </channel>
 </rss>`
