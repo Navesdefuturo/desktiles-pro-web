@@ -24,7 +24,7 @@ function MacWindow({ children, className = '' }: { children: React.ReactNode; cl
 // FEATURE 1 — From chaos to focus (before/after)
 function ChaosFocusMockup() {
   return (
-    <div className="grid grid-cols-2 gap-3">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
       {/* Before */}
       <MacWindow>
         <div className="bg-gradient-to-br from-[#E8EAF0] to-[#D8DCE8] p-4 relative min-h-[200px]">

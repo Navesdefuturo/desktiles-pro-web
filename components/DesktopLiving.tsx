@@ -18,8 +18,8 @@ export default function DesktopLiving() {
       />
 
       {/* Content — right aligned */}
-      <div className="relative max-w-[1100px] mx-auto px-6 py-28 flex flex-col items-end justify-center" style={{ minHeight: '560px' }}>
-        <div className="max-w-[420px] text-right">
+      <div className="relative max-w-[1100px] mx-auto px-6 py-28 flex flex-col items-center md:items-end justify-center" style={{ minHeight: '560px' }}>
+        <div className="max-w-[420px] text-center md:text-right">
           <p className="text-[11px] font-semibold tracking-widest text-white/50 uppercase mb-5">
             For people who live on their desktop
           </p>
