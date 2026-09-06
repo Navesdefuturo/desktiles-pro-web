@@ -34,6 +34,7 @@ import PeopleSection from '@/components/PeopleSection'
 import SocialProof from '@/components/SocialProof'
 import LifestyleSection from '@/components/LifestyleSection'
 import Details from '@/components/Details'
+import PressSection from '@/components/PressSection'
 import Pricing from '@/components/Pricing'
 import FAQ from '@/components/FAQ'
 import Quote from '@/components/Quote'
@@ -58,6 +59,7 @@ export default function Home() {
       <SocialProof />
       <LifestyleSection />
       <Details />
+      <PressSection />
       <Pricing />
       <FAQ />
       <Quote />
