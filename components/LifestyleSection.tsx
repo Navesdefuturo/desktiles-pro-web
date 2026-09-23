@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function LifestyleSection() {
   return (
     <section className="relative w-full overflow-hidden bg-[#F5F5F7]">
@@ -33,10 +35,11 @@ export default function LifestyleSection() {
 
         {/* Image — right */}
         <div className="relative h-[420px] md:h-[560px] order-1 md:order-2">
-          <img
+          <Image
             src="/screenshots/desktiles-lifestyle-imac-layout-gallery.jpg"
             alt="Person using DeskTiles on a yellow iMac — Layout Gallery open with project templates"
-            className="absolute inset-0 w-full h-full object-cover object-center"
+            fill
+            className="object-cover object-center"
           />
           <div
             className="absolute inset-0 md:block hidden"

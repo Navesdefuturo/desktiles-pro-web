@@ -1,12 +1,15 @@
+import Image from 'next/image'
+
 export default function DesktopLiving() {
   return (
     <section className="relative w-full overflow-hidden" style={{ minHeight: '560px' }}>
       {/* Background image */}
-      <img
+      <Image
         src="/desktiles-mac-projects-desktop.png"
         alt="Mac power user living inside their desktop with DeskTiles"
-        className="absolute inset-0 w-full h-full object-cover object-center"
-        aria-hidden="true"
+        fill
+        className="object-cover object-center"
+        aria-hidden
       />
 
       {/* Gradient — dark on right for text readability */}

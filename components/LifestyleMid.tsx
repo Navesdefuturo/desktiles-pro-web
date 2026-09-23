@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function LifestyleMid() {
   return (
     <section className="relative w-full overflow-hidden bg-white">
@@ -5,10 +7,11 @@ export default function LifestyleMid() {
 
         {/* Image — full bleed left, 58% viewport width */}
         <div className="relative w-full md:w-[58vw] h-[380px] md:h-[520px] shrink-0 order-1">
-          <img
+          <Image
             src="/screenshots/desktiles-lifestyle-woman-imac-workspace.jpg"
             alt="Woman working on a yellow iMac with DeskTiles — organized workspace with project tiles"
-            className="absolute inset-0 w-full h-full object-cover object-center"
+            fill
+            className="object-cover object-center"
           />
           {/* Fade to white on the right for smooth text transition */}
           <div

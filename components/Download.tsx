@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Download() {
   return (
     <section id="download" className="relative w-full overflow-hidden bg-[#F5F5F7]">
@@ -5,10 +7,11 @@ export default function Download() {
 
         {/* Image — left */}
         <div className="relative h-[420px] md:h-[580px] order-1">
-          <img
+          <Image
             src="/desktiles-dream-mac-workspace.png"
             alt="Imagining a better Mac desktop with DeskTiles"
-            className="absolute inset-0 w-full h-full object-cover object-center"
+            fill
+            className="object-cover object-center"
           />
           {/* Fade right to blend with light section */}
           <div

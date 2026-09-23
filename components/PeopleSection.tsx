@@ -1,12 +1,15 @@
+import Image from 'next/image'
+
 export default function PeopleSection() {
   return (
     <section className="relative w-full overflow-hidden" style={{ minHeight: '560px' }}>
       {/* Background image */}
-      <img
+      <Image
         src="/desktiles-your-rules-your-way.png"
         alt=""
-        className="absolute inset-0 w-full h-full object-cover object-center"
-        aria-hidden="true"
+        fill
+        className="object-cover object-center"
+        aria-hidden
       />
 
       {/* Gradient overlay — dark left side for text readability */}

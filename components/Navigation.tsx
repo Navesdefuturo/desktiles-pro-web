@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useState } from 'react'
 
 const links = [
@@ -21,7 +22,7 @@ export default function Navigation() {
       <div className="max-w-[1200px] mx-auto px-6 h-14 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2 shrink-0">
-          <img
+          <Image
             src="/desktiles-icon.png"
             alt="DeskTiles"
             width={28}

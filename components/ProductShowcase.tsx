@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 // Feature label pill
 function Label({ text }: { text: string }) {
   return (
@@ -25,7 +27,7 @@ function MacWindow({ children, className = '' }: { children: React.ReactNode; cl
 function EisenhowerMockup() {
   return (
     <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60">
-      <img
+      <Image
         src="/screenshots/desktiles-eisenhower-layout-auto-tiles.jpg"
         alt="Eisenhower Matrix layout applied on the Mac desktop — Do, Decide, Delegate, Delete tiles with Golden Gate Bridge wallpaper"
         width={1400}
@@ -41,7 +43,7 @@ function EisenhowerMockup() {
 function LayoutGalleryMockup() {
   return (
     <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60">
-      <img
+      <Image
         src="/screenshots/desktiles-layout-gallery-window.jpg"
         alt="DeskTiles Layout Gallery — My Projects, Kanban Flow, Sprint Board, Eisenhower Matrix, My Life, Inbox + Lists and more presets"
         width={1300}
@@ -59,7 +61,7 @@ function ChaosFocusMockup() {
     <div className="flex flex-col gap-3">
       {/* Before */}
       <div className="relative rounded-2xl overflow-hidden shadow-xl border border-[#D8D8D8]/60">
-        <img
+        <Image
           src="/screenshots/desktiles-before-messy-desktop.jpg"
           alt="Messy Mac desktop before DeskTiles — files scattered everywhere"
           width={1600}
@@ -77,7 +79,7 @@ function ChaosFocusMockup() {
 
       {/* After */}
       <div className="relative rounded-2xl overflow-hidden shadow-xl border border-[#D8D8D8]/60">
-        <img
+        <Image
           src="/screenshots/desktiles-after-organized-project-tiles.jpg"
           alt="Organized Mac desktop after DeskTiles — project tiles collapsed and clean"
           width={1600}
@@ -100,7 +102,7 @@ function ChaosFocusMockup() {
 function ExpandContextMockup() {
   return (
     <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60">
-      <img
+      <Image
         src="/screenshots/desktiles-expanded-tiles-project-files.jpg"
         alt="DeskTiles with all project tiles expanded showing files inside each tile"
         width={1400}
@@ -116,7 +118,7 @@ function ExpandContextMockup() {
 function NativeMockup() {
   return (
     <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60 max-w-[540px]">
-      <img
+      <Image
         src="/screenshots/desktiles-native-right-click-context-menu.jpg"
         alt="Right-click context menu on a file inside a DeskTiles tile — Open, Quick Look, Show in Finder, Put Back on Desktop"
         width={1400}
@@ -132,7 +134,7 @@ function NativeMockup() {
 function RealFilesMockup() {
   return (
     <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60 max-w-[540px]">
-      <img
+      <Image
         src="/screenshots/desktiles-real-files-finder-window.jpg"
         alt="DeskTiles tile open alongside a Finder window showing the same real files — same folder, no copy"
         width={1400}

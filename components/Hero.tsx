@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 
 const slides = [
@@ -25,12 +26,13 @@ const slides = [
 
 function AppIcon() {
   return (
-    <img
+    <Image
       src="/desktiles-icon.png"
       alt="DeskTiles"
       width={100}
       height={100}
       className="mx-auto mb-6 rounded-[22px] shadow-lg"
+      priority
     />
   )
 }
@@ -40,12 +42,12 @@ function HeroDesktop() {
     <div className="relative w-full max-w-[960px] mx-auto">
       <div className="absolute inset-0 bg-gradient-to-r from-[#A896D8]/15 via-[#AABAD6]/15 to-[#7BC4A8]/15 blur-3xl rounded-full scale-90 -translate-y-4" />
       <div className="relative rounded-2xl overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.22)]">
-        <img
+        <Image
           src="/screenshots/desktiles-hero-golden-gate-macos.jpg"
           alt="DeskTiles running on macOS Golden Gate — colored project tiles on the desktop with Golden Gate Bridge wallpaper"
           width={2000}
           height={1199}
-          fetchPriority="high"
+          priority
           className="w-full h-auto block"
         />
       </div>
