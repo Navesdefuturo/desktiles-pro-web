@@ -37,7 +37,7 @@ export default function VideoSection() {
           /> */}
         </div>
 
-        <p className="text-[13px] text-[#8E8E93] text-center mt-6">
+        <p className="text-[13px] text-[#6E6E73] text-center mt-6">
           45 seconds. No narration. Just DeskTiles.
         </p>
       </div>

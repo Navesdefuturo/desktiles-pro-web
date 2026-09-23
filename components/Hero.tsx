@@ -192,11 +192,11 @@ export default function Hero() {
           </a>
         </div>
 
-        <p className="text-[13px] text-[#8E8E93] mb-6">
+        <p className="text-[13px] text-[#6E6E73] mb-6">
           macOS Sonoma · Sequoia · Tahoe · Golden Gate &nbsp;·&nbsp; One-time purchase &nbsp;·&nbsp; No cloud
         </p>
 
-        <p className="text-[14px] text-[#8E8E93] italic mb-20">
+        <p className="text-[14px] text-[#6E6E73] italic mb-20">
           "It doesn't feel like a tool anymore. It's just how the Mac works."
         </p>
 

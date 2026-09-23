@@ -24,7 +24,7 @@ export default function Newsletter() {
           src="https://assets.ipzmarketing.com/assets/signup_form/iframe_v1.js"
           strategy="lazyOnload"
         />
-        <p className="text-[11px] text-[#8E8E93] mt-4 leading-relaxed">
+        <p className="text-[11px] text-[#6E6E73] mt-4 leading-relaxed">
           By subscribing you agree to receive occasional emails about DeskTiles.
           No spam. Unsubscribe at any time.{' '}
           <a href="/privacy" className="underline underline-offset-2 hover:text-[#1D1D1F]">Privacy Policy</a>.

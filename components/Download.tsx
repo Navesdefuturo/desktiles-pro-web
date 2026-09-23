@@ -48,7 +48,7 @@ export default function Download() {
             Get DeskTiles — €14.99
           </a>
 
-          <p className="text-[13px] text-[#8E8E93] mt-5 leading-relaxed">
+          <p className="text-[13px] text-[#6E6E73] mt-5 leading-relaxed">
             One-time purchase &nbsp;·&nbsp; All future updates included
           </p>
         </div>

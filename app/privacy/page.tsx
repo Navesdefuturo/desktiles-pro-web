@@ -5,6 +5,7 @@ import Navigation from '@/components/Navigation'
 export const metadata: Metadata = {
   title: 'Privacy Policy — DeskTiles',
   description: 'DeskTiles privacy policy. The app collects no data. Everything stays on your Mac.',
+  alternates: { canonical: 'https://desktiles.app/privacy' },
 }
 
 const LAST_UPDATED = 'September 2026'
@@ -19,7 +20,7 @@ export default function PrivacyPage() {
           <h1 className="text-[clamp(28px,4vw,44px)] font-semibold tracking-[-0.02em] text-[#1D1D1F] mb-3">
             Privacy Policy
           </h1>
-          <p className="text-[14px] text-[#8E8E93] mb-16">Last updated: {LAST_UPDATED}</p>
+          <p className="text-[14px] text-[#6E6E73] mb-16">Last updated: {LAST_UPDATED}</p>
 
           <div className="space-y-12 text-[16px] text-[#3D3D3F] leading-relaxed">
 
@@ -62,8 +63,30 @@ export default function PrivacyPage() {
               <h2 className="text-[20px] font-semibold text-[#1D1D1F] mb-4">This website</h2>
               <p>
                 The desktiles.app website does not use advertising trackers or third-party cookies.
-                If we add analytics in the future, we will use a privacy-first tool (such as Plausible)
-                that collects no personal data and sets no cookies.
+                We use{' '}<strong>Cloudflare Web Analytics</strong> to measure page visits.
+                Cloudflare Web Analytics collects no personal data, sets no cookies, and uses
+                no fingerprinting. See{' '}
+                <a href="https://www.cloudflare.com/privacypolicy/" className="text-[#1D1D1F] underline underline-offset-2" target="_blank" rel="noopener noreferrer">
+                  Cloudflare's privacy policy
+                </a>{' '}
+                for details.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-[20px] font-semibold text-[#1D1D1F] mb-4">Newsletter</h2>
+              <p>
+                If you subscribe to DeskTiles updates, your email address is stored and processed
+                by <strong>Mailrelay</strong> (IPZ Marketing, S.L.) on our behalf.
+                Mailrelay acts as a data processor under the GDPR. We use your email address only
+                to send you product updates. You can unsubscribe at any time using the link in any
+                email we send.
+              </p>
+              <p className="mt-4">
+                Mailrelay's privacy policy:{' '}
+                <a href="https://mailrelay.com/en/privacy-policy/" className="text-[#1D1D1F] underline underline-offset-2" target="_blank" rel="noopener noreferrer">
+                  mailrelay.com/en/privacy-policy
+                </a>
               </p>
             </section>
 

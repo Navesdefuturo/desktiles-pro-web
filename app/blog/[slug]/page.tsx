@@ -16,6 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${post.title} — DeskTiles`,
     description: post.description,
+    alternates: { canonical: `https://desktiles.app/blog/${slug}` },
     openGraph: {
       title: `${post.title} — DeskTiles`,
       description: post.description,
@@ -113,11 +114,11 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       <main className="min-h-screen bg-white pt-24 pb-20 px-6">
         <div className="max-w-[680px] mx-auto">
 
-          <Link href="/blog" className="text-[13px] text-[#8E8E93] hover:text-[#1D1D1F] transition-colors mb-10 inline-block">
+          <Link href="/blog" className="text-[13px] text-[#6E6E73] hover:text-[#1D1D1F] transition-colors mb-10 inline-block">
             ← Blog
           </Link>
 
-          <p className="text-[12px] text-[#8E8E93] mb-4 uppercase tracking-widest font-medium">
+          <p className="text-[12px] text-[#6E6E73] mb-4 uppercase tracking-widest font-medium">
             {post.date} · {post.readingTime}
           </p>
 

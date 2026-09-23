@@ -5,6 +5,7 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Release Notes — DeskTiles',
   description: 'What\'s new in DeskTiles. Version history and release notes.',
+  alternates: { canonical: 'https://desktiles.app/changelog' },
 }
 
 const releases = [
@@ -44,7 +45,7 @@ export default function ChangelogPage() {
                   <h2 className="text-[22px] font-semibold text-[#1D1D1F] tracking-[-0.02em]">
                     Version {r.version}
                   </h2>
-                  <span className="text-[13px] text-[#8E8E93]">{r.date}</span>
+                  <span className="text-[13px] text-[#6E6E73]">{r.date}</span>
                   {r.label && (
                     <span className="text-[11px] font-semibold uppercase tracking-widest text-[#92620A] bg-[#FFF8ED] px-2.5 py-0.5 rounded-full">
                       {r.label}
