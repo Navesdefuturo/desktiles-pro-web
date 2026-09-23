@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 const links = [
   { label: 'Highlights', href: '#highlights' },
@@ -8,31 +8,21 @@ const links = [
   { label: 'Auto Tiles', href: '#auto-tiles' },
   { label: 'Pricing', href: '#pricing' },
   { label: 'FAQ', href: '#faq' },
+  { label: 'Blog', href: '/blog' },
 ]
 
 export default function Navigation() {
-  const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20)
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-white/88 backdrop-blur-xl border-b border-[#D2D2D7]/50 shadow-sm'
-          : 'bg-transparent'
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-[#D2D2D7]/50"
     >
       <div className="max-w-[1200px] mx-auto px-6 h-14 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2 shrink-0">
           <img
-            src="/icon.png"
+            src="/desktiles-icon.png"
             alt="DeskTiles"
             width={28}
             height={28}
