@@ -17,11 +17,11 @@ export default function Comparison() {
         <div className="rounded-2xl border border-[#D2D2D7]/60 overflow-hidden">
           {/* Header */}
           <div className="grid grid-cols-3 bg-[#F5F5F7]">
-            <div className="p-5 text-[13px] text-[#6E6E73] font-medium" />
-            <div className="p-5 text-[13px] text-[#6E6E73] font-medium border-l border-[#D2D2D7]/40 text-center">
+            <div className="p-3 sm:p-5 text-[11px] sm:text-[13px] text-[#6E6E73] font-medium" />
+            <div className="p-3 sm:p-5 text-[11px] sm:text-[13px] text-[#6E6E73] font-medium border-l border-[#D2D2D7]/40 text-center">
               Desktop Folders
             </div>
-            <div className="p-5 text-[13px] font-semibold text-[#1D1D1F] border-l border-[#D2D2D7]/40 text-center bg-[#AABAD6]/10">
+            <div className="p-3 sm:p-5 text-[11px] sm:text-[13px] font-semibold text-[#1D1D1F] border-l border-[#D2D2D7]/40 text-center bg-[#AABAD6]/10">
               DeskTiles PRO
             </div>
           </div>
@@ -34,11 +34,11 @@ export default function Comparison() {
                 i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAFA]'
               }`}
             >
-              <div className="p-5 text-[14px] font-medium text-[#1D1D1F]">{row.label}</div>
-              <div className="p-5 text-[14px] text-[#6E6E73] border-l border-[#D2D2D7]/40 text-center">
+              <div className="p-3 sm:p-5 text-[12px] sm:text-[14px] font-medium text-[#1D1D1F]">{row.label}</div>
+              <div className="p-3 sm:p-5 text-[11px] sm:text-[14px] text-[#6E6E73] border-l border-[#D2D2D7]/40 text-center leading-snug">
                 {row.folders}
               </div>
-              <div className="p-5 text-[14px] text-[#1D1D1F] font-medium border-l border-[#D2D2D7]/40 text-center bg-[#AABAD6]/5">
+              <div className="p-3 sm:p-5 text-[11px] sm:text-[14px] text-[#1D1D1F] font-medium border-l border-[#D2D2D7]/40 text-center bg-[#AABAD6]/5 leading-snug">
                 ✓ {row.desktiles}
               </div>
             </div>

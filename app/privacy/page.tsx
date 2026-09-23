@@ -27,7 +27,7 @@ export default function PrivacyPage() {
               <h2 className="text-[20px] font-semibold text-[#1D1D1F] mb-4">Who we are</h2>
               <p>
                 DeskTiles is developed and operated by{' '}
-                <strong>Cesar Pedro Julian Ibañez</strong>, based in Barcelona, Spain.
+                <strong>Cesar Pedro Julian Ibañez</strong> (NIF 46343787Y), based in Barcelona, Spain.
                 You can reach us at{' '}
                 <a href="mailto:hello@desktiles.app" className="text-[#1D1D1F] underline underline-offset-2">
                   hello@desktiles.app
