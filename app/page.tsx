@@ -39,6 +39,7 @@ import Pricing from '@/components/Pricing'
 import FAQ from '@/components/FAQ'
 import Quote from '@/components/Quote'
 import Download from '@/components/Download'
+import Newsletter from '@/components/Newsletter'
 import Footer from '@/components/Footer'
 
 export default function Home() {
@@ -64,6 +65,7 @@ export default function Home() {
       <FAQ />
       <Quote />
       <Download />
+      <Newsletter />
       <Footer />
     </main>
   )

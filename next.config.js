@@ -24,17 +24,17 @@ const securityHeaders = [
   // - img-src: allow self + data URIs (for inline SVGs/images)
   // - font-src: self only
   // - connect-src: self + Paddle API (when activated)
-  // - frame-src: Paddle checkout overlay
+  // - frame-src: Paddle checkout overlay + Mailrelay newsletter signup form
   {
     key: 'Content-Security-Policy',
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' https://cdn.paddle.com",
+      "script-src 'self' 'unsafe-inline' https://cdn.paddle.com https://assets.ipzmarketing.com",
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: blob:",
       "font-src 'self'",
       "connect-src 'self' https://checkout.paddle.com https://plausible.io",
-      "frame-src https://checkout.paddle.com",
+      "frame-src https://checkout.paddle.com https://desktiles.ipzmarketing.com",
       "object-src 'none'",
       "base-uri 'self'",
       "form-action 'self'",
