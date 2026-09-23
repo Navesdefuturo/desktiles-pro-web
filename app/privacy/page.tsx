@@ -27,11 +27,12 @@ export default function PrivacyPage() {
               <h2 className="text-[20px] font-semibold text-[#1D1D1F] mb-4">Who we are</h2>
               <p>
                 DeskTiles is developed and operated by{' '}
-                <strong>[Tu nombre completo]</strong>, based in Barcelona, Spain.
+                <strong>Cesar Pedro Julian Ibañez</strong>, based in Barcelona, Spain.
                 You can reach us at{' '}
                 <a href="mailto:hello@desktiles.app" className="text-[#1D1D1F] underline underline-offset-2">
                   hello@desktiles.app
-                </a>.
+                </a>{' '}
+                or by post at: Apartado de correos 6015, 08022 Barcelona, Spain.
               </p>
             </section>
 
@@ -40,7 +41,7 @@ export default function PrivacyPage() {
               <div className="bg-[#F5F5F7] rounded-2xl p-6 space-y-3">
                 <p className="flex gap-3"><span>✓</span><span>The DeskTiles app collects <strong>no data</strong>. Everything runs on your Mac. Nothing leaves your device.</span></p>
                 <p className="flex gap-3"><span>✓</span><span>This website sets <strong>no tracking cookies</strong> and collects no personal information from visitors.</span></p>
-                <p className="flex gap-3"><span>✓</span><span>When you buy, <strong>Paddle</strong> processes your payment. We receive your email address to deliver your license. That's it.</span></p>
+                <p className="flex gap-3"><span>✓</span><span>When you buy through the <strong>App Store</strong>, Apple processes your payment. We receive no personal data from Apple beyond what the App Store provides.</span></p>
               </div>
             </section>
 
@@ -69,16 +70,13 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-[20px] font-semibold text-[#1D1D1F] mb-4">Purchasing</h2>
               <p>
-                Payments are processed by{' '}
-                <a href="https://www.paddle.com/legal/privacy" target="_blank" rel="noopener noreferrer" className="text-[#1D1D1F] underline underline-offset-2">
-                  Paddle.com
-                </a>{' '}
-                (Paddle.com Market Ltd), who act as Merchant of Record. Paddle collects your payment
-                details, email address, and billing country. We receive your email address to issue your
-                license. We do not receive or store your card details.
+                DeskTiles is sold exclusively through the{' '}
+                <strong>Apple App Store</strong>. Payments are processed entirely by Apple.
+                We do not receive or store your payment details, card number, or billing address.
+                Apple's privacy policy governs any data collected during the purchase.
               </p>
               <p className="mt-4">
-                For questions about a payment or refund, contact Paddle directly or email us at{' '}
+                For questions about a purchase, contact Apple Support or email us at{' '}
                 <a href="mailto:hello@desktiles.app" className="text-[#1D1D1F] underline underline-offset-2">
                   hello@desktiles.app
                 </a>.
@@ -122,6 +120,11 @@ export default function PrivacyPage() {
                 <a href="mailto:hello@desktiles.app" className="text-[#1D1D1F] underline underline-offset-2">
                   hello@desktiles.app
                 </a>
+              </p>
+              <p className="mt-4 text-[#6E6E73]">
+                Cesar Pedro Julian Ibañez<br />
+                Apartado de correos 6015<br />
+                08022 Barcelona, Spain
               </p>
             </section>
 
