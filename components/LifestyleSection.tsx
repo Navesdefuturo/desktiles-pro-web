@@ -6,18 +6,19 @@ export default function LifestyleSection() {
         {/* Text — left */}
         <div className="px-8 md:px-16 py-20 order-2 md:order-1">
           <p className="text-[11px] font-semibold tracking-widest text-[#6E6E73] uppercase mb-5">
-            Real people. Real Macs.
+            For people who live on their Mac
           </p>
           <h2
             className="font-bold text-[#1D1D1F] leading-[1.1] tracking-[-0.03em] mb-6"
-            style={{ fontSize: 'clamp(28px, 3.5vw, 46px)' }}
+            style={{ fontSize: 'clamp(26px, 3.2vw, 44px)' }}
           >
-            The desktop you
+            Your Mac is smart.
             <br />
-            always deserved.
+            <span className="text-[#6E6E73]">Your desktop
+            <br />should be too.</span>
           </h2>
           <p className="text-[16px] text-[#6E6E73] leading-relaxed mb-8 max-w-[380px]">
-            DeskTiles is for anyone who spends their day on a Mac and wants their workspace to feel intentional — not accidental.
+            DeskTiles organizes everything around how you actually work — not around how a folder hierarchy was invented in 1984.
           </p>
           <p className="text-[12px] font-semibold text-[#92620A] uppercase tracking-wide mb-3">
             Launch offer · Limited time
@@ -33,15 +34,14 @@ export default function LifestyleSection() {
         {/* Image — right */}
         <div className="relative h-[420px] md:h-[560px] order-1 md:order-2">
           <img
-            src="/desktiles-imac-creative-workspace.png"
-            alt="Working at Mac with DeskTiles"
+            src="/screenshots/desktiles-lifestyle-imac-layout-gallery.jpg"
+            alt="Person using DeskTiles on a yellow iMac — Layout Gallery open with project templates"
             className="absolute inset-0 w-full h-full object-cover object-center"
           />
-          {/* Subtle left fade to blend with white background */}
           <div
             className="absolute inset-0 md:block hidden"
             style={{
-              background: 'linear-gradient(to right, #F5F5F7 0%, transparent 25%)',
+              background: 'linear-gradient(to right, #F5F5F7 0%, transparent 30%)',
             }}
           />
         </div>

@@ -36,6 +36,7 @@ import LifestyleSection from '@/components/LifestyleSection'
 import Details from '@/components/Details'
 import PressSection from '@/components/PressSection'
 import Pricing from '@/components/Pricing'
+import LifestyleMid from '@/components/LifestyleMid'
 import FAQ from '@/components/FAQ'
 import Quote from '@/components/Quote'
 import Download from '@/components/Download'
@@ -62,6 +63,7 @@ export default function Home() {
       <Details />
       <PressSection />
       <Pricing />
+      <LifestyleMid />
       <FAQ />
       <Quote />
       <Download />

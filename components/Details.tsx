@@ -1,5 +1,5 @@
 const cards = [
-  { icon: '🎨', title: 'Edit Style', desc: 'Colors, fonts, tile size, borders. Customize every detail until your desktop feels like yours.' },
+  { icon: '🎨', title: 'Edit Style', desc: 'Colors, fonts, tile size, header shape, borders, opacity. Customize every detail until your desktop feels like yours.' },
   { icon: '◻', title: 'Layout presets', desc: 'Eisenhower matrix, rows, columns, free layout. Start organized from day one.' },
   { icon: '⌘', title: 'Native macOS', desc: 'Quick Look, drag & drop, right-click menus, keyboard shortcuts. Zero learning curve.' },
   { icon: '⚡', title: 'Instant animations', desc: 'GPU-accelerated. Every expand and collapse is fluid and immediate.' },

@@ -1,6 +1,6 @@
 export default function Quote() {
   return (
-    <section className="relative py-[120px] px-6 bg-[#1D1D1F] overflow-hidden">
+    <section className="relative py-[80px] px-6 bg-[#1D1D1F] overflow-hidden">
 
       {/* Neural network — más visible, más nodos */}
       <svg
@@ -53,21 +53,15 @@ export default function Quote() {
 
       {/* Content */}
       <div className="relative max-w-[800px] mx-auto text-center">
-        <p className="text-[clamp(22px,3.8vw,42px)] font-semibold text-white leading-[1.25] tracking-[-0.02em] mb-10">
+        <p className="text-[clamp(22px,3.8vw,42px)] font-semibold text-white leading-[1.25] tracking-[-0.02em] mb-6">
           &ldquo;Finally, a desktop that works
           <br />
           the way I actually think.&rdquo;
         </p>
-
-        <div className="border-t border-white/10 pt-10 mt-2">
-          <p className="text-[17px] text-white/50 leading-relaxed max-w-[540px] mx-auto mb-2">
-            &ldquo;I open a project tile and everything I need is right there.
-            No Finder. No searching. Just work.&rdquo;
-          </p>
-          <p className="text-[13px] text-white/25 tracking-widest uppercase">
-            Designed for Mac · Made in Barcelona
-          </p>
-        </div>
+        <p className="text-[17px] text-white/50 leading-relaxed max-w-[500px] mx-auto">
+          &ldquo;I open a project tile and everything I need is right there.
+          No Finder. No searching. Just work.&rdquo;
+        </p>
       </div>
     </section>
   )

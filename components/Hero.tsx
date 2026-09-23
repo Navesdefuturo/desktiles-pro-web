@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 const slides = [
   {
@@ -26,7 +26,7 @@ const slides = [
 function AppIcon() {
   return (
     <img
-      src="/icon.png"
+      src="/desktiles-icon.png"
       alt="DeskTiles"
       width={100}
       height={100}
@@ -37,56 +37,17 @@ function AppIcon() {
 
 function HeroDesktop() {
   return (
-    <div className="relative w-full max-w-[920px] mx-auto">
-      <div className="absolute inset-0 bg-gradient-to-r from-[#A896D8]/20 via-[#AABAD6]/20 to-[#7BC4A8]/20 blur-3xl rounded-full scale-90 -translate-y-4" />
-      <div className="relative rounded-2xl overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.18)] border border-white/60">
-        {/* macOS titlebar */}
-        <div className="h-8 bg-[#EBEBEB] flex items-center px-4 gap-1.5 border-b border-[#D8D8D8]">
-          <div className="w-3 h-3 rounded-full bg-[#FF5F57]" />
-          <div className="w-3 h-3 rounded-full bg-[#FFBD2E]" />
-          <div className="w-3 h-3 rounded-full bg-[#28C840]" />
-          <span className="ml-auto text-[11px] text-[#8E8E93] font-medium">Desktop — Sequoia</span>
-        </div>
-        {/* Desktop surface */}
-        <div className="bg-gradient-to-br from-[#E2EBF5] via-[#D6E2EF] to-[#C6D5E8] p-6 min-h-[300px] relative flex flex-col gap-3">
-          {/* Expanded tile */}
-          <div className="rounded-2xl bg-white/70 backdrop-blur-sm border border-white/80 shadow-xl overflow-hidden w-full max-w-[360px]">
-            <div className="px-4 py-2.5 flex items-center gap-2.5 bg-[#AABAD6]/40 border-b border-[#AABAD6]/30">
-              <div className="w-2.5 h-2.5 rounded-full bg-[#7BA8C4]" />
-              <span className="text-[12px] font-semibold text-[#1D1D1F]">Website Redesign</span>
-              <span className="ml-auto text-[10px] text-[#6E6E73]">5 files</span>
-            </div>
-            <div className="px-4 py-3 flex gap-3.5">
-              {[
-                { icon: '📄', name: 'Brief.pdf' },
-                { icon: '📊', name: 'Budget.xlsx' },
-                { icon: '🖼️', name: 'Mockup.png' },
-                { icon: '📝', name: 'Notes.txt' },
-              ].map((f) => (
-                <div key={f.name} className="text-center">
-                  <div className="w-10 h-10 bg-white/90 rounded-xl mb-1 flex items-center justify-center text-lg shadow-sm">{f.icon}</div>
-                  <span className="text-[8px] text-[#6E6E73]">{f.name}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-          {/* Collapsed pills */}
-          <div className="rounded-full bg-[#E0EBF5]/80 border border-[#AABAD6]/50 px-4 py-2 flex items-center gap-2.5 w-fit shadow-sm">
-            <div className="w-2 h-2 rounded-full bg-[#7BA8C4]" />
-            <span className="text-[12px] font-semibold text-[#1D1D1F]">Client A</span>
-            <span className="ml-2 text-[10px] text-[#6E6E73]">8 files</span>
-          </div>
-          <div className="rounded-full bg-[#EDE8F8]/80 border border-[#C5B8E8]/50 px-4 py-2 flex items-center gap-2.5 w-fit shadow-sm">
-            <div className="w-2 h-2 rounded-full bg-[#A896D8]" />
-            <span className="text-[12px] font-semibold text-[#1D1D1F]">Personal</span>
-            <span className="ml-2 text-[10px] text-[#6E6E73]">3 files</span>
-          </div>
-          <div className="rounded-full bg-[#F5EFE0]/80 border border-[#D6C870]/50 px-4 py-2 flex items-center gap-2.5 w-fit shadow-sm">
-            <div className="w-2 h-2 rounded-full bg-[#C8B060]" />
-            <span className="text-[12px] font-semibold text-[#1D1D1F]">Research</span>
-            <span className="ml-2 text-[10px] text-[#6E6E73]">12 files</span>
-          </div>
-        </div>
+    <div className="relative w-full max-w-[960px] mx-auto">
+      <div className="absolute inset-0 bg-gradient-to-r from-[#A896D8]/15 via-[#AABAD6]/15 to-[#7BC4A8]/15 blur-3xl rounded-full scale-90 -translate-y-4" />
+      <div className="relative rounded-2xl overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.22)]">
+        <img
+          src="/screenshots/desktiles-hero-golden-gate-macos.jpg"
+          alt="DeskTiles running on macOS Golden Gate — colored project tiles on the desktop with Golden Gate Bridge wallpaper"
+          width={2000}
+          height={1199}
+          fetchPriority="high"
+          className="w-full h-auto block"
+        />
       </div>
     </div>
   )
@@ -95,16 +56,25 @@ function HeroDesktop() {
 export default function Hero() {
   const [current, setCurrent] = useState(0)
   const [visible, setVisible] = useState(true)
+  const rafRef = useRef<number>(0)
+  const lastRef = useRef<number>(0)
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setVisible(false)
-      setTimeout(() => {
-        setCurrent((c) => (c + 1) % slides.length)
-        setVisible(true)
-      }, 500)
-    }, 7500)
-    return () => clearInterval(interval)
+    const tick = (now: number) => {
+      if (lastRef.current === 0) lastRef.current = now
+      if (now - lastRef.current >= 4000) {
+        lastRef.current = now
+        setVisible(false)
+        setTimeout(() => {
+          setCurrent((c) => (c + 1) % slides.length)
+          lastRef.current = 0
+          setVisible(true)
+        }, 400)
+      }
+      rafRef.current = requestAnimationFrame(tick)
+    }
+    rafRef.current = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(rafRef.current)
   }, [])
 
   const slide = slides[current]
@@ -161,27 +131,43 @@ export default function Hero() {
           {slide.body}
         </p>
 
-        {/* Dots */}
-        <div className="flex items-center justify-center gap-2 mb-10">
+        {/* Apple-style progress indicator */}
+        <div className="flex items-center justify-center gap-[7px] mb-10">
           {slides.map((_, i) => (
             <button
               key={i}
               onClick={() => {
+                lastRef.current = 0
                 setVisible(false)
                 setTimeout(() => { setCurrent(i); setVisible(true) }, 400)
               }}
               aria-label={`Slide ${i + 1}`}
               style={{
-                width: i === current ? 20 : 6,
+                width: i === current ? 28 : 6,
                 height: 6,
                 borderRadius: 9999,
-                background: i === current ? '#1D1D1F' : '#D2D2D7',
-                transition: 'all 0.3s ease',
+                backgroundColor: '#E5E5EA',
                 border: 'none',
                 cursor: 'pointer',
                 padding: 0,
+                position: 'relative',
+                overflow: 'hidden',
+                transition: 'width 0.35s ease',
               }}
-            />
+            >
+              {i === current && (
+                <span
+                  key={current}
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    backgroundColor: '#1D1D1F',
+                    transformOrigin: 'left center',
+                    animation: 'pillFill 4s linear forwards',
+                  }}
+                />
+              )}
+            </button>
           ))}
         </div>
 

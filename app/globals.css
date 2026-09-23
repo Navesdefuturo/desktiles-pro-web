@@ -56,6 +56,12 @@ body {
   100% { background-position: 0% 0%; }
 }
 
+/* Carousel progress indicator */
+@keyframes pillFill {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
 /* Carousel */
 .hero-slide {
   transition: opacity 0.7s ease, transform 0.7s ease;
