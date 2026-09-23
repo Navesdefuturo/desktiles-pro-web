@@ -33,7 +33,7 @@ So what do people do? They create a folder called "Project X" and put shortcuts 
 
 When you switch projects, you don't just open a different folder. You have to rebuild your mental map. Which Safari tabs were open for this? Where was that reference image? What was I looking at when I left off?
 
-Studies on knowledge work consistently find that context switching — even within the same day — costs 20 to 40 minutes of productive time per switch. The folder doesn't help with this. It holds files, not context.
+Every time you switch projects, you have to rebuild your mental map from scratch. Which Safari tabs were open for this? Where was that reference image? What was I looking at when I left off? The folder doesn't help with this. It holds files, not context.
 
 ## What power users actually do
 
@@ -53,7 +53,7 @@ A tile is a named workspace that remembers everything you put in it: your most-u
 
 You don't reorganize. You don't search. You just switch.
 
-This is what DeskTiles does. It lives on your Mac desktop and gives each project its own space. The files stay wherever they are (in Finder, in Dropbox, in iCloud) — you're not moving anything. You're just giving each project a front door.
+This is what DeskTiles does. It lives on your Mac desktop and gives each project its own space. When you drop a file onto a tile, DeskTiles moves it into that tile's folder — so everything for a project lives together. If a file needs to stay put (a Dropbox or iCloud document you can't move), hold ⌥⌘ while dragging to drop an alias instead: the original doesn't move, but the tile still knows where to find it.
 
 ## Is this for everyone?
 
