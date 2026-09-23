@@ -74,6 +74,9 @@ export default function Pricing() {
         <p className="text-[13px] text-[#8E8E93] text-center mt-8 leading-relaxed">
           Your files never leave your Mac.
         </p>
+        <p className="text-[14px] text-[#8E8E93] italic text-center mt-4">
+          "It doesn't feel like a tool anymore. It's just how the Mac works."
+        </p>
       </div>
     </section>
   )
