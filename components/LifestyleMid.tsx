@@ -28,10 +28,10 @@ export default function LifestyleMid() {
             className="font-bold text-[#1D1D1F] leading-[1.1] tracking-[-0.03em] mb-5"
             style={{ fontSize: 'clamp(24px, 2.6vw, 36px)' }}
           >
-            &ldquo;Once you get it,
+            &ldquo;Once it clicks,
             <br />
-            <span className="text-[#6E6E73]">you can't live
-            <br />without it.&rdquo;</span>
+            <span className="text-[#6E6E73]">going back
+            <br />feels broken.&rdquo;</span>
           </h2>
           <p className="text-[15px] text-[#6E6E73] leading-relaxed mb-8 max-w-[320px]">
             The first time you open a project and everything is right there — files, references, work in progress — you'll wonder how you ever managed without it.

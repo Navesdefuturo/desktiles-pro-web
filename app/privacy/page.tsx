@@ -128,6 +128,30 @@ export default function PrivacyPage() {
               </p>
             </section>
 
+            <section>
+              <h2 className="text-[20px] font-semibold text-[#1D1D1F] mb-4">Aviso legal (España)</h2>
+              <p className="text-[15px] text-[#6E6E73] leading-relaxed">
+                En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la
+                Información y del Comercio Electrónico (LSSI-CE):
+              </p>
+              <ul className="mt-4 space-y-2 text-[15px] text-[#6E6E73]">
+                <li><strong className="text-[#3D3D3F]">Titular:</strong> Cesar Pedro Julian Ibañez</li>
+                <li><strong className="text-[#3D3D3F]">NIF:</strong> 46343787Y</li>
+                <li><strong className="text-[#3D3D3F]">Domicilio:</strong> Apartado de correos 6015, 08022 Barcelona, España</li>
+                <li><strong className="text-[#3D3D3F]">Correo electrónico:</strong>{' '}
+                  <a href="mailto:hello@desktiles.app" className="text-[#1D1D1F] underline underline-offset-2">
+                    hello@desktiles.app
+                  </a>
+                </li>
+                <li><strong className="text-[#3D3D3F]">Actividad:</strong> Desarrollo y distribución de software para macOS</li>
+              </ul>
+              <p className="mt-4 text-[15px] text-[#6E6E73] leading-relaxed">
+                La distribución de DeskTiles se realiza exclusivamente a través de la Apple App Store.
+                El presente sitio web no realiza actividad comercial directa ni recoge datos de carácter
+                personal salvo lo descrito en esta política de privacidad.
+              </p>
+            </section>
+
           </div>
         </div>
       </main>

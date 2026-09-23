@@ -16,6 +16,20 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${post.title} — DeskTiles`,
     description: post.description,
+    openGraph: {
+      title: `${post.title} — DeskTiles`,
+      description: post.description,
+      type: 'article',
+      url: `https://desktiles.app/blog/${post.slug}`,
+      siteName: 'DeskTiles',
+      publishedTime: post.date,
+      images: [{ url: 'https://desktiles.app/opengraph-image.png', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${post.title} — DeskTiles`,
+      description: post.description,
+    },
   }
 }
 
