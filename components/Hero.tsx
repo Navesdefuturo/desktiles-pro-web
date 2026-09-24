@@ -64,7 +64,7 @@ export default function Hero() {
   useEffect(() => {
     const tick = (now: number) => {
       if (lastRef.current === 0) lastRef.current = now
-      if (now - lastRef.current >= 4000) {
+      if (now - lastRef.current >= 7000) {
         lastRef.current = now
         setVisible(false)
         setTimeout(() => {
