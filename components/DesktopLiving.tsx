@@ -5,8 +5,8 @@ export default function DesktopLiving() {
     <section className="relative w-full overflow-hidden" style={{ minHeight: '560px' }}>
       {/* Background image */}
       <Image
-        src="/desktiles-desktop-living.webp"
-        alt="Mac power user at their desk working with DeskTiles"
+        src="/desktiles-mac-projects-desktop.png"
+        alt="Mac power user living inside their desktop with DeskTiles"
         fill
         className="object-cover object-center"
         aria-hidden

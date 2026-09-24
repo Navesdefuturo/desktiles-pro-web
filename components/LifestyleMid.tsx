@@ -8,8 +8,8 @@ export default function LifestyleMid() {
         {/* Image — full bleed left, 58% viewport width */}
         <div className="relative w-full md:w-[58vw] h-[380px] md:h-[520px] shrink-0 order-1">
           <Image
-            src="/screenshots/desktiles-lifestyle-woman-imac-workspace.jpg"
-            alt="Woman working on a yellow iMac with DeskTiles — organized workspace with project tiles"
+            src="/screenshots/desktiles-lifestyle-man-workspace.webp"
+            alt="Man working at his desk with DeskTiles — organized workspace with project tiles"
             fill
             className="object-cover object-center"
           />
