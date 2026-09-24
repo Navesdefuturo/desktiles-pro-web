@@ -11,8 +11,8 @@ const slides = [
     body: 'Mac gives you folders. DeskTiles gives you projects — one tile, everything you need, exactly where you left it.',
   },
   {
-    line1: 'Ok, think different…',
-    line2: 'But organize better!',
+    line1: 'Work different.',
+    line2: 'Organize better.',
     sub: 'Way better.',
     body: 'macOS organizes your files. DeskTiles organizes your work. Stacks sorts by type. DeskTiles sorts by you.',
   },
@@ -64,7 +64,7 @@ export default function Hero() {
   useEffect(() => {
     const tick = (now: number) => {
       if (lastRef.current === 0) lastRef.current = now
-      if (now - lastRef.current >= 10000) {
+      if (now - lastRef.current >= 13000) {
         lastRef.current = now
         setVisible(false)
         setTimeout(() => {
