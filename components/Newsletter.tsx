@@ -19,6 +19,7 @@ export default function Newsletter() {
           scrolling="no"
           width="100%"
           className="ipz-iframe"
+          title="Newsletter signup form"
         />
         <Script
           src="https://assets.ipzmarketing.com/assets/signup_form/iframe_v1.js"

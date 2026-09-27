@@ -79,7 +79,7 @@ function ChaosFocusMockup() {
 
       {/* After */}
       <div className="relative rounded-2xl overflow-hidden shadow-xl border border-[#D8D8D8]/60">
-        <video src="/videos/desktiles-after-stack.mp4" autoPlay muted loop playsInline className="w-full h-auto block" />
+        <video src="/videos/desktiles-after-stack.mp4" autoPlay muted loop playsInline preload="none" className="w-full h-auto block" />
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <span className="text-white font-bold tracking-[0.12em] uppercase"
             style={{ fontSize: 'clamp(28px, 5vw, 52px)', textShadow: '0 2px 20px rgba(0,0,0,0.6)' }}>
@@ -197,7 +197,7 @@ const features = [
     imageLeft: false,
     mockup: (
       <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60">
-        <video src="/videos/desktiles-layout-selector.mp4" autoPlay muted loop playsInline className="w-full h-auto block" />
+        <video src="/videos/desktiles-layout-selector.mp4" autoPlay muted loop playsInline preload="none" className="w-full h-auto block" />
       </div>
     ),
   },
@@ -215,7 +215,7 @@ const features = [
     imageLeft: false,
     mockup: (
       <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60">
-        <video src="/videos/desktiles-context.mp4" autoPlay muted loop playsInline className="w-full h-auto block" />
+        <video src="/videos/desktiles-context.mp4" autoPlay muted loop playsInline preload="none" className="w-full h-auto block" />
       </div>
     ),
   },
@@ -226,7 +226,7 @@ const features = [
     imageLeft: true,
     mockup: (
       <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60">
-        <video src="/videos/desktiles-native.mp4" autoPlay muted loop playsInline className="w-full h-auto block" />
+        <video src="/videos/desktiles-native.mp4" autoPlay muted loop playsInline preload="none" className="w-full h-auto block" />
       </div>
     ),
   },
@@ -237,7 +237,7 @@ const features = [
     imageLeft: false,
     mockup: (
       <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60">
-        <video src="/videos/desktiles-finder.mp4" autoPlay muted loop playsInline className="w-full h-auto block" />
+        <video src="/videos/desktiles-finder.mp4" autoPlay muted loop playsInline preload="none" className="w-full h-auto block" />
       </div>
     ),
   },
@@ -248,7 +248,7 @@ const features = [
     imageLeft: true,
     mockup: (
       <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60">
-        <video src="/videos/desktiles-style.mp4" autoPlay muted loop playsInline className="w-full h-auto block" />
+        <video src="/videos/desktiles-style.mp4" autoPlay muted loop playsInline preload="none" className="w-full h-auto block" />
       </div>
     ),
   },
@@ -259,7 +259,7 @@ const features = [
     imageLeft: false,
     mockup: (
       <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60">
-        <video src="/videos/desktiles-layout-move.mp4" autoPlay muted loop playsInline className="w-full h-auto block" />
+        <video src="/videos/desktiles-layout-move.mp4" autoPlay muted loop playsInline preload="none" className="w-full h-auto block" />
       </div>
     ),
   },

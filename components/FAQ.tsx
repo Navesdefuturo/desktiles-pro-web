@@ -35,6 +35,7 @@ function Item({ q, a }: { q: string; a: string }) {
     <div className="border-b border-[#D2D2D7]/50 last:border-0">
       <button
         onClick={() => setOpen(!open)}
+        aria-expanded={open}
         className="w-full flex items-center justify-between py-5 text-left gap-4"
       >
         <span className="text-[16px] font-medium text-[#1D1D1F]">{q}</span>

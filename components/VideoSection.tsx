@@ -14,6 +14,7 @@ export default function VideoSection() {
             muted
             loop
             playsInline
+            preload="metadata"
             className="w-full h-full object-cover"
           />
         </div>
