@@ -58,7 +58,7 @@ function Item({ q, a }: { q: string; a: string }) {
 
 export default function FAQ() {
   return (
-    <section id="faq" className="py-[120px] px-6 border-t border-[#D2D2D7]/40">
+    <section id="faq" className="py-[60px] px-6 border-t border-[#D2D2D7]/40">
       <div className="max-w-[720px] mx-auto">
         <h2 className="text-[clamp(28px,4.5vw,48px)] font-semibold tracking-[-0.02em] text-[#1D1D1F] text-center mb-16">
           Questions

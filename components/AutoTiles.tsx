@@ -58,7 +58,7 @@ function MemoryMockup() {
 
 export default function AutoTiles() {
   return (
-    <section id="auto-tiles" className="py-[120px] px-6 bg-[#F5F5F7]">
+    <section id="auto-tiles" className="py-[60px] px-6">
       <div className="max-w-[1100px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 

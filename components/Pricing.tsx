@@ -13,7 +13,7 @@ const features = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-[120px] px-6 border-t border-[#D2D2D7]/40">
+    <section id="pricing" className="py-[60px] px-6 border-t border-[#D2D2D7]/40">
       <div className="max-w-[520px] mx-auto">
         <h2 className="text-[clamp(32px,5vw,52px)] font-semibold tracking-[-0.02em] text-[#1D1D1F] text-center mb-3">
           Simple pricing.
