@@ -31,10 +31,10 @@ import DesktopLiving from '@/components/DesktopLiving'
 import ProductShowcase from '@/components/ProductShowcase'
 import AutoTiles from '@/components/AutoTiles'
 import PeopleSection from '@/components/PeopleSection'
-import SocialProof from '@/components/SocialProof'
+// import SocialProof from '@/components/SocialProof'   // pendiente: reactivar cuando haya reseñas reales
 import LifestyleSection from '@/components/LifestyleSection'
 import Details from '@/components/Details'
-import PressSection from '@/components/PressSection'
+// import PressSection from '@/components/PressSection'  // pendiente: reactivar cuando haya cobertura de prensa
 import Pricing from '@/components/Pricing'
 import LifestyleMid from '@/components/LifestyleMid'
 import FAQ from '@/components/FAQ'
@@ -58,10 +58,10 @@ export default function Home() {
       <ProductShowcase />
       <AutoTiles />
       <PeopleSection />
-      <SocialProof />
+      {/* <SocialProof /> */}
       <LifestyleSection />
       <Details />
-      <PressSection />
+      {/* <PressSection /> */}
       <Pricing />
       <LifestyleMid />
       <FAQ />
