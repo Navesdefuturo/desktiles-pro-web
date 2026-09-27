@@ -16,25 +16,14 @@ export default function VideoSection() {
             <span className="ml-auto text-[11px] text-white/30 font-medium">DeskTiles — Demo</span>
           </div>
 
-          {/* Play button placeholder */}
-          <div className="flex flex-col items-center gap-4 opacity-40">
-            <div className="w-16 h-16 rounded-full border-2 border-white/60 flex items-center justify-center">
-              <svg width="20" height="22" viewBox="0 0 20 22" fill="white">
-                <path d="M2 2l16 9-16 9V2z" />
-              </svg>
-            </div>
-            <span className="text-white/60 text-[13px] font-medium">Demo video — coming soon</span>
-          </div>
-
-          {/* When you have the Screen.studio embed, replace the above div with: */}
-          {/* <video
-            src="YOUR_SCREEN_STUDIO_VIDEO_URL"
+          <video
+            src="/hero-demo.mp4"
             autoPlay
             muted
             loop
             playsInline
-            className="w-full h-full object-cover"
-          /> */}
+            className="w-full h-full object-cover mt-8"
+          />
         </div>
 
         <p className="text-[13px] text-[#6E6E73] text-center mt-6">
