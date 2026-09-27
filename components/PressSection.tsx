@@ -55,7 +55,7 @@ function Stars({ rating, max }: { rating: number; max: number }) {
 
 export default function PressSection() {
   return (
-    <section className="py-[100px] px-6 border-t border-[#D2D2D7]/40">
+    <section className="py-[60px] px-6 border-t border-[#D2D2D7]/40">
       <div className="max-w-[1100px] mx-auto">
 
         {/* Eyebrow */}

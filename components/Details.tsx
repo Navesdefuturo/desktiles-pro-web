@@ -11,7 +11,7 @@ const cards = [
 
 export default function Details() {
   return (
-    <section className="py-[120px] px-6 border-t border-[#D2D2D7]/40">
+    <section className="py-[60px] px-6 border-t border-[#D2D2D7]/40">
       <div className="max-w-[1100px] mx-auto">
         <h2 className="text-[clamp(28px,4.5vw,48px)] font-semibold tracking-[-0.02em] text-[#1D1D1F] text-center mb-4">
           Built for people who live
