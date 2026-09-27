@@ -185,7 +185,17 @@ const features = [
     chips: ['🎨 Designer', '💻 Developer', '📋 Freelancer', '🔬 Researcher'],
     extra: 'Or build your own. Pick from the Layout Gallery — rows, columns, Eisenhower matrix, and more — and apply it in one click. Each tile maps to a real project on your desktop, not a virtual folder.',
     imageLeft: true,
-    mockup: <EisenhowerMockup />,
+    mockup: (
+      <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60">
+        <Image
+          src="/screenshots/desktiles-eisenhower-layout.webp"
+          alt="DeskTiles Eisenhower matrix layout — four quadrants for task prioritization"
+          width={1200}
+          height={900}
+          className="w-full h-auto block"
+        />
+      </div>
+    ),
   },
   {
     label: 'LAYOUT GALLERY',
