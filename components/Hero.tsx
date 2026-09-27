@@ -37,23 +37,6 @@ function AppIcon() {
   )
 }
 
-function HeroDesktop() {
-  return (
-    <div className="relative w-full max-w-[960px] mx-auto">
-      <div className="absolute inset-0 bg-gradient-to-r from-[#A896D8]/15 via-[#AABAD6]/15 to-[#7BC4A8]/15 blur-3xl rounded-full scale-90 -translate-y-4" />
-      <div className="relative rounded-2xl overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.22)]">
-        <Image
-          src="/screenshots/desktiles-hero-golden-gate-macos.jpg"
-          alt="DeskTiles running on macOS Golden Gate — colored project tiles on the desktop with Golden Gate Bridge wallpaper"
-          width={2000}
-          height={1199}
-          priority
-          className="w-full h-auto block"
-        />
-      </div>
-    </div>
-  )
-}
 
 export default function Hero() {
   const [current, setCurrent] = useState(0)
