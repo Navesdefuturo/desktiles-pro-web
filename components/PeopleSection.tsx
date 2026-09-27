@@ -8,7 +8,7 @@ export default function PeopleSection() {
         src="/desktiles-your-rules-your-way.png"
         alt=""
         fill
-        className="object-cover object-center"
+        className="object-cover object-top"
         aria-hidden
       />
 
