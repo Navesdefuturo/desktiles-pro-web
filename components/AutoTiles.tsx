@@ -77,9 +77,9 @@ export default function AutoTiles() {
             </p>
           </div>
 
-          {/* Mockup right */}
-          <div className="flex justify-center md:justify-end">
-            <MemoryMockup />
+          {/* Video right */}
+          <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60">
+            <video src="/videos/desktiles-save-layout.mp4" autoPlay muted loop playsInline className="w-full h-auto block" />
           </div>
 
         </div>
