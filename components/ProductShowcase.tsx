@@ -202,7 +202,11 @@ const features = [
     title: 'Pick a template.\nStart instantly.',
     body: 'DeskTiles ships with layouts for every workflow. Projects, organizing, focus, minimalism. Choose one and your desktop is ready in seconds — not in days.',
     imageLeft: false,
-    mockup: <LayoutGalleryMockup />,
+    mockup: (
+      <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60">
+        <video src="/videos/desktiles-layout-selector.mp4" autoPlay muted loop playsInline className="w-full h-auto block" />
+      </div>
+    ),
   },
   {
     label: 'FOCUS',
