@@ -79,15 +79,8 @@ function ChaosFocusMockup() {
 
       {/* After */}
       <div className="relative rounded-2xl overflow-hidden shadow-xl border border-[#D8D8D8]/60">
-        <Image
-          src="/screenshots/desktiles-after-organized-project-tiles.jpg"
-          alt="Organized Mac desktop after DeskTiles — project tiles collapsed and clean"
-          width={1600}
-          height={900}
-          loading="lazy"
-          className="w-full h-auto block"
-        />
-        <div className="absolute inset-0 flex items-center justify-center">
+        <video src="/videos/desktiles-after-stack.mp4" autoPlay muted loop playsInline className="w-full h-auto block" />
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <span className="text-white font-bold tracking-[0.12em] uppercase"
             style={{ fontSize: 'clamp(28px, 5vw, 52px)', textShadow: '0 2px 20px rgba(0,0,0,0.6)' }}>
             After
