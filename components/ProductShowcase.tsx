@@ -230,7 +230,11 @@ const features = [
     title: 'Your files stay yours.',
     body: 'DeskTiles works with real Finder files — not a database, not a cloud container. No subscriptions. No sync engine. No vendor lock-in.',
     imageLeft: false,
-    mockup: <RealFilesMockup />,
+    mockup: (
+      <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60">
+        <video src="/videos/desktiles-finder.mp4" autoPlay muted loop playsInline className="w-full h-auto block" />
+      </div>
+    ),
   },
   {
     label: 'WORKFLOWS',
