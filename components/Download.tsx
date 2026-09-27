@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Download() {
   return (
-    <section id="download" className="relative w-full overflow-hidden bg-[#F5F5F7]">
+    <section id="download" className="relative w-full overflow-hidden bg-[#F5F5F7] mt-[100px]">
       <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center">
 
         {/* Image — left */}
