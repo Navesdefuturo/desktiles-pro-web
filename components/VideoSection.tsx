@@ -7,22 +7,14 @@ export default function VideoSection() {
         </p>
 
         {/* Video placeholder — replace src with your Screen.studio embed */}
-        <div className="relative rounded-2xl overflow-hidden shadow-[0_32px_80px_rgba(0,0,0,0.15)] border border-white/60 bg-[#1D1D1F] aspect-video flex items-center justify-center">
-          {/* macOS chrome */}
-          <div className="absolute top-0 left-0 right-0 h-8 bg-[#2A2A2A] flex items-center px-4 gap-1.5 border-b border-white/10">
-            <div className="w-3 h-3 rounded-full bg-[#FF5F57]" />
-            <div className="w-3 h-3 rounded-full bg-[#FFBD2E]" />
-            <div className="w-3 h-3 rounded-full bg-[#28C840]" />
-            <span className="ml-auto text-[11px] text-white/30 font-medium">DeskTiles — Demo</span>
-          </div>
-
+        <div className="relative rounded-2xl overflow-hidden shadow-[0_32px_80px_rgba(0,0,0,0.15)] aspect-video">
           <video
             src="/hero-demo.mp4"
             autoPlay
             muted
             loop
             playsInline
-            className="w-full h-full object-cover mt-8"
+            className="w-full h-full object-cover"
           />
         </div>
 
