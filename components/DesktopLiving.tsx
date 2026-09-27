@@ -5,8 +5,8 @@ export default function DesktopLiving() {
     <section className="relative w-full overflow-hidden" style={{ minHeight: '560px' }}>
       {/* Background image */}
       <Image
-        src="/desktiles-mac-projects-desktop.png"
-        alt="Mac power user living inside their desktop with DeskTiles"
+        src="/desktiles-desktop-living-2.png"
+        alt="Power user living inside their desktop with DeskTiles"
         fill
         className="object-cover object-center"
         aria-hidden
@@ -16,7 +16,7 @@ export default function DesktopLiving() {
       <div
         className="absolute inset-0"
         style={{
-          background: 'linear-gradient(to left, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.35) 55%, rgba(0,0,0,0.05) 100%)',
+          background: 'linear-gradient(to left, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.28) 55%, rgba(0,0,0,0.05) 100%)',
         }}
       />
 
