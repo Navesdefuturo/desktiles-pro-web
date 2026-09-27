@@ -1,6 +1,6 @@
 export default function VideoSection() {
   return (
-    <section className="py-[80px] px-6 bg-[#F5F5F7] border-t border-[#D2D2D7]/40">
+    <section className="py-[48px] px-6 bg-[#F5F5F7] border-t border-[#D2D2D7]/40">
       <div className="max-w-[920px] mx-auto">
         <p className="text-[11px] font-semibold tracking-widest text-[#6E6E73] uppercase text-center mb-6">
           See it in action

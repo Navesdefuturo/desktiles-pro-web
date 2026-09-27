@@ -65,7 +65,7 @@ export default function Hero() {
   const slide = slides[current]
 
   return (
-    <section className="flex flex-col items-center justify-center pt-16 pb-20 px-6 overflow-hidden">
+    <section className="flex flex-col items-center justify-center pt-16 pb-8 px-6 overflow-hidden">
       <div className="max-w-[1100px] w-full mx-auto text-center">
 
         <AppIcon />
@@ -179,7 +179,7 @@ export default function Hero() {
           macOS Sonoma · Sequoia · Tahoe · Golden Gate &nbsp;·&nbsp; One-time purchase &nbsp;·&nbsp; No cloud
         </p>
 
-        <p className="text-[14px] text-[#6E6E73] italic mb-20">
+        <p className="text-[14px] text-[#6E6E73] italic mb-8">
           "It doesn't feel like a tool anymore. It's just how the Mac works."
         </p>
 
