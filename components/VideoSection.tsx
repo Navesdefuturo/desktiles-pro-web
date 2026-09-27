@@ -7,7 +7,7 @@ export default function VideoSection() {
         </p>
 
         {/* Video placeholder — replace src with your Screen.studio embed */}
-        <div className="relative rounded-2xl overflow-hidden shadow-[0_32px_80px_rgba(0,0,0,0.15)] aspect-video">
+        <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60 aspect-video">
           <video
             src="/hero-demo.mp4"
             autoPlay
