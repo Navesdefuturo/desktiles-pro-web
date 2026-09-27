@@ -223,7 +223,11 @@ const features = [
     title: 'Feels like macOS.',
     body: 'Quick Look. Keyboard navigation. Drag & drop. Finder behavior. Everything works exactly the way Mac users expect.',
     imageLeft: true,
-    mockup: <NativeMockup />,
+    mockup: (
+      <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60">
+        <video src="/videos/desktiles-native.mp4" autoPlay muted loop playsInline className="w-full h-auto block" />
+      </div>
+    ),
   },
   {
     label: 'REAL FILES',
