@@ -216,7 +216,11 @@ const features = [
     title: 'Your projects stay together.',
     body: 'Expand a tile and instantly recover the full context of your work. Files, references, screenshots, PDFs, ideas — exactly where you left them.',
     imageLeft: false,
-    mockup: <ExpandContextMockup />,
+    mockup: (
+      <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60">
+        <video src="/videos/desktiles-context.mp4" autoPlay muted loop playsInline className="w-full h-auto block" />
+      </div>
+    ),
   },
   {
     label: 'NATIVE EXPERIENCE',
