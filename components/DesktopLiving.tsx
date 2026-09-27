@@ -8,7 +8,7 @@ export default function DesktopLiving() {
         src="/desktiles-desktop-living-2.png"
         alt="Power user living inside their desktop with DeskTiles"
         fill
-        className="object-cover object-center"
+        className="object-cover object-top"
         aria-hidden
       />
 
