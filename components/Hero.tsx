@@ -65,7 +65,7 @@ export default function Hero() {
   const slide = slides[current]
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center pt-16 px-6 overflow-hidden">
+    <section className="flex flex-col items-center justify-center pt-16 pb-20 px-6 overflow-hidden">
       <div className="max-w-[1100px] w-full mx-auto text-center">
 
         <AppIcon />
