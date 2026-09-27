@@ -62,7 +62,12 @@ export default function AutoTiles() {
       <div className="max-w-[1100px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
-          {/* Text left */}
+          {/* Video left */}
+          <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60">
+            <video src="/videos/desktiles-save-layout.mp4" autoPlay muted loop playsInline className="w-full h-auto block" />
+          </div>
+
+          {/* Text right */}
           <div>
             <span className="inline-block text-[11px] font-semibold tracking-widest text-[#6E6E73] uppercase mb-4">
               YOUR LAYOUT
@@ -75,11 +80,6 @@ export default function AutoTiles() {
             <p className="text-[17px] text-[#6E6E73] leading-relaxed">
               DeskTiles remembers your layouts. Save your current arrangement to memory — then recall it with one click, any time. Switch between your "focus mode" and your "full context" setup in seconds.
             </p>
-          </div>
-
-          {/* Video right */}
-          <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60">
-            <video src="/videos/desktiles-save-layout.mp4" autoPlay muted loop playsInline className="w-full h-auto block" />
           </div>
 
         </div>
