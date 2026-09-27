@@ -36,8 +36,8 @@ export default function LifestyleSection() {
         {/* Image — right */}
         <div className="relative h-[420px] md:h-[560px] order-1 md:order-2">
           <Image
-            src="/screenshots/desktiles-lifestyle-imac-layout-gallery.jpg"
-            alt="Person using DeskTiles on a yellow iMac — Layout Gallery open with project templates"
+            src="/screenshots/desktiles-lifestyle-layout-gallery.webp"
+            alt="Person using DeskTiles — Layout Gallery open with project templates"
             fill
             className="object-cover object-center"
           />
