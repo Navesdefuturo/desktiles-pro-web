@@ -249,10 +249,21 @@ const features = [
     ),
   },
   {
+    label: 'STYLE',
+    title: 'Make it yours.\nDown to every pixel.',
+    body: 'Change colors, background, shape, opacity, icon size and font — every tile is fully yours. DeskTiles adapts to how you think, not the other way around.',
+    imageLeft: true,
+    mockup: (
+      <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60">
+        <video src="/videos/desktiles-style.mp4" autoPlay muted loop playsInline className="w-full h-auto block" />
+      </div>
+    ),
+  },
+  {
     label: 'WORKFLOWS',
     title: 'Move entire workflows together.',
     body: 'Select multiple tiles and reorganize your workspace in seconds. A professional spatial tool — not a simple sorter.',
-    imageLeft: true,
+    imageLeft: false,
     mockup: (
       <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60">
         <video src="/videos/desktiles-layout-move.mp4" autoPlay muted loop playsInline className="w-full h-auto block" />
