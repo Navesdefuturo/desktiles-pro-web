@@ -200,7 +200,6 @@ export default function Hero() {
           "It doesn't feel like a tool anymore. It's just how the Mac works."
         </p>
 
-        <HeroDesktop />
       </div>
     </section>
   )
