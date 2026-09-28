@@ -4,6 +4,10 @@ import { useState } from 'react'
 
 const faqs = [
   {
+    q: 'Does it slow down my Mac?',
+    a: 'No. DeskTiles is designed to use near-zero CPU and memory. It has no background sync, no scanning, no cloud connection. It sits quietly until you need it — most users never see it in Activity Monitor.',
+  },
+  {
     q: 'Is it really a one-time purchase?',
     a: 'Yes. €14.99, one time. No subscription, no monthly fee. All future updates are included in the purchase price.',
   },

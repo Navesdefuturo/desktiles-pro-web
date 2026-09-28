@@ -17,6 +17,14 @@ export const metadata: Metadata = {
     url: 'https://desktiles.app',
     siteName: 'DeskTiles',
     locale: 'en_US',
+    images: [
+      {
+        url: '/og-image.webp',
+        width: 2000,
+        height: 1299,
+        alt: 'DeskTiles — Mac desktop organized into project tiles with Golden Gate Bridge wallpaper',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
