@@ -51,13 +51,13 @@ export default function VideoSection() {
 
           {/* Caption overlay */}
           <div
-            className="absolute inset-0 flex items-center justify-center pointer-events-none"
+            className="absolute inset-x-0 bottom-0 flex items-end justify-center pb-[6%] pointer-events-none"
             aria-live="polite"
           >
             <span
               className="text-white font-bold tracking-[0.08em] uppercase text-center transition-all duration-300"
               style={{
-                fontSize: 'clamp(28px, 5vw, 52px)',
+                fontSize: 'clamp(20px, 3.5vw, 36px)',
                 textShadow: '0 2px 20px rgba(0,0,0,0.6)',
                 opacity: caption ? 1 : 0,
               }}
