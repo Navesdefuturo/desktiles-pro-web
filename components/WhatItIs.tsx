@@ -2,18 +2,18 @@ export default function WhatItIs() {
   const features = [
     {
       number: '01',
-      title: 'Drop it in.',
-      description: 'Each tile is a real folder on your Mac. Drop files onto it and they\'re filed away inside. Open with a double-click, preview with Space, drag back out whenever you need them.',
+      title: 'Your order. Not Mac\'s.',
+      description: 'macOS Stacks sorts by file type. DeskTiles sorts by how you work. Projects, clients, contexts — you decide what goes where and how it looks.',
     },
     {
       number: '02',
-      title: 'Collapse it.',
-      description: 'Fold a tile to a slim bar when you\'re not using it. Expand again with a double-click. Your desktop stays calm without losing anything.',
+      title: 'Your style. From scratch.',
+      description: 'Colors, fonts, tile size, borders. Every detail is yours. Your desktop should reflect your work, not a default macOS setting you never chose.',
     },
     {
       number: '03',
-      title: 'Make it yours.',
-      description: 'Colors, color palettes, fonts, corner shapes and transparency — every tile, every detail. Copy a tile\'s style and paste it onto others in one click.',
+      title: 'Your projects. Always ready.',
+      description: 'One click to expand a project. Everything exactly where you left it — files, references, screenshots, PDFs. Zero hunting. Zero friction.',
     },
   ]
 
@@ -24,13 +24,13 @@ export default function WhatItIs() {
         {/* macOS vs DeskTiles contrast */}
         <div className="text-center mb-24">
           <h2 className="text-[clamp(28px,4.5vw,52px)] font-semibold tracking-[-0.02em] text-[#1D1D1F] mb-5 leading-[1.1]">
-            A cluttered desktop,
+            macOS organizes your files.
             <br />
-            <span style={{ color: '#7BA8C4' }}>made calm.</span>
+            <span style={{ color: '#7BA8C4' }}>DeskTiles organizes your work.</span>
           </h2>
           <p className="text-[17px] text-[#6E6E73] max-w-[480px] mx-auto leading-relaxed">
-            DeskTiles turns your Mac desktop into tidy, colorful tiles.
-            Each tile is a real folder — no cloud, no account, nothing leaves your Mac.
+            Stacks sort by type. Finder sorts by name.
+            DeskTiles sorts by you — by project, by client, by context.
           </p>
         </div>
 
