@@ -12,10 +12,6 @@ const faqs = [
     a: 'DeskTiles runs on macOS Sonoma (14), Sequoia (15), Tahoe (26) and Golden Gate (27). Built and tested on the latest macOS.',
   },
   {
-    q: 'Does it work with my iCloud / Dropbox files?',
-    a: 'Yes — with one thing worth knowing. A tile keeps its files together in one real folder on your Mac, so dropping a file into a tile moves it there: a file from iCloud Drive, Dropbox or OneDrive leaves that folder and stops syncing. For anything that has to stay put — shared folders, synced projects — drop an alias instead (⌥⌘-drag it from Finder). The alias sits in the tile, opens the file with a double-click, and the original never moves.',
-  },
-  {
     q: 'Does my data go anywhere?',
     a: 'No. Everything stays on your Mac. DeskTiles has no server, no account, no telemetry. Your files are yours.',
   },
@@ -25,7 +21,7 @@ const faqs = [
   },
   {
     q: 'What if I change my mind?',
-    a: 'Write to hello@desktiles.app and we\'ll sort it out.',
+    a: 'DeskTiles is sold through the Mac App Store, so Apple\'s standard refund policy applies. You can request a refund directly at reportaproblem.apple.com.',
   },
 ]
 
