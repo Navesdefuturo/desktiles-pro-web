@@ -5,7 +5,7 @@ import { useState } from 'react'
 const faqs = [
   {
     q: 'Does it slow down my Mac?',
-    a: 'No. DeskTiles is designed to use near-zero CPU and memory. It has no background sync, no scanning, no cloud connection. It sits quietly until you need it — most users never see it in Activity Monitor.',
+    a: 'No. It stays out of the way: at rest it does almost nothing. It only keeps an eye on your tiles\' folders, so anything you change in Finder shows up instantly — and that\'s all it does in the background. No cloud, no account, no network: nothing leaves your Mac.',
   },
   {
     q: 'Is it really a one-time purchase?',
