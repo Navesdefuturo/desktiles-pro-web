@@ -5,22 +5,22 @@ import { useEffect, useRef, useState } from 'react'
 
 const slides = [
   {
-    line1: 'Files everywhere.',
-    line2: 'Not anymore.',
-    sub: 'Tiles for a tidy Mac desktop.',
-    body: 'Turn a cluttered desktop into calm, colorful tiles. Drop files in, collapse them to a slim bar, and find everything at a glance — no cloud, no account.',
+    line1: 'Projects.',
+    line2: 'Not folders.',
+    sub: 'Desktop. Upgraded.',
+    body: 'Mac gives you folders. DeskTiles gives you projects — one tile, everything you need, exactly where you left it.',
   },
   {
-    line1: 'Make it yours.',
-    line2: 'Down to every tile.',
-    sub: 'Your colors, your style.',
-    body: 'Colors, palettes, fonts, corner shapes and transparency for every tile. Copy a style and paste it onto others in one click.',
+    line1: 'Work different.',
+    line2: 'Organize better.',
+    sub: 'Way better.',
+    body: 'macOS organizes your files. DeskTiles organizes your work. Stacks sorts by type. DeskTiles sorts by you.',
   },
   {
-    line1: 'Below your windows.',
-    line2: 'Out of the way.',
-    sub: 'Always there when you need it.',
-    body: 'Lives on your desktop, below your apps. Show Desktop keeps working the way you expect. No cloud, no account — nothing ever leaves your Mac.',
+    line1: 'The Desktop, Reimagined.',
+    line2: 'Your Rules. Your Way.',
+    sub: 'From Chaos to Clarity.',
+    body: 'Custom tiles, your colors, your layouts. A desktop that works the way you think — not the way they decided.',
   },
 ]
 
