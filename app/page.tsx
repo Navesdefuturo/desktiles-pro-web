@@ -1,74 +1,48 @@
-import type { WithContext, SoftwareApplication } from 'schema-dts'
-import Navigation from '@/components/Navigation'
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
 
-const jsonLd: WithContext<SoftwareApplication> = {
-  '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: 'DeskTiles',
-  description: 'Organize your Mac desktop by project, not by folder. Custom project tiles — expand, collapse, drag, rename. Native macOS. No cloud. No subscription.',
-  url: 'https://desktiles.app',
-  applicationCategory: 'ProductivityApplication',
-  operatingSystem: 'macOS 14, macOS 15, macOS 26, macOS 27',
-  offers: {
-    '@type': 'Offer',
-    price: '14.99',
-    priceCurrency: 'EUR',
-    priceValidUntil: '2026-12-31',
-    availability: 'https://schema.org/InStock',
-  },
-  author: {
-    '@type': 'Organization',
-    name: 'DeskTiles',
-    url: 'https://desktiles.app',
-    email: 'hello@desktiles.app',
-  },
-  releaseNotes: 'https://desktiles.app/changelog',
+export const metadata: Metadata = {
+  title: 'DeskTiles — Coming soon',
+  description: 'DeskTiles is coming soon to the Mac App Store.',
+  robots: { index: false, follow: false },
 }
-import Hero from '@/components/Hero'
-import VideoSection from '@/components/VideoSection'
-import WhatItIs from '@/components/WhatItIs'
-import DesktopLiving from '@/components/DesktopLiving'
-import ProductShowcase from '@/components/ProductShowcase'
-import AutoTiles from '@/components/AutoTiles'
-import PeopleSection from '@/components/PeopleSection'
-// import SocialProof from '@/components/SocialProof'   // pendiente: reactivar cuando haya reseñas reales
-import LifestyleSection from '@/components/LifestyleSection'
-import Details from '@/components/Details'
-// import PressSection from '@/components/PressSection'  // pendiente: reactivar cuando haya cobertura de prensa
-import Pricing from '@/components/Pricing'
-import LifestyleMid from '@/components/LifestyleMid'
-import FAQ from '@/components/FAQ'
-import Quote from '@/components/Quote'
-import Download from '@/components/Download'
-import Newsletter from '@/components/Newsletter'
-import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
-    <main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      <Navigation />
-      <Hero />
-      <VideoSection />
-      <WhatItIs />
-      <DesktopLiving />
-      <ProductShowcase />
-      <AutoTiles />
-      <PeopleSection />
-      {/* <SocialProof /> */}
-      <LifestyleSection />
-      <Details />
-      {/* <PressSection /> */}
-      <Pricing />
-      <LifestyleMid />
-      <FAQ />
-      <Quote />
-      <Download />
-      <Newsletter />
-      <Footer />
+    <main className="min-h-screen bg-white flex flex-col items-center justify-center px-6 py-16">
+      <div className="text-center max-w-[420px]">
+
+        <Image
+          src="/desktiles-icon.png"
+          alt="DeskTiles"
+          width={80}
+          height={80}
+          className="mx-auto mb-8 rounded-[18px] shadow-md"
+          priority
+        />
+
+        <h1 className="text-[28px] font-semibold tracking-[-0.02em] text-[#1D1D1F] mb-3">
+          DeskTiles
+        </h1>
+
+        <p className="text-[17px] text-[#6E6E73] leading-relaxed mb-10">
+          Coming soon to the Mac App Store.
+        </p>
+
+        <a
+          href="mailto:hello@desktiles.app"
+          className="text-[15px] text-[#1D1D1F] underline underline-offset-2 hover:text-[#6E6E73] transition-colors"
+        >
+          hello@desktiles.app
+        </a>
+
+      </div>
+
+      <footer className="absolute bottom-8 flex items-center gap-6 text-[13px] text-[#6E6E73]">
+        <Link href="/privacy" className="hover:text-[#1D1D1F] transition-colors">Privacy</Link>
+        <Link href="/support" className="hover:text-[#1D1D1F] transition-colors">Support</Link>
+      </footer>
     </main>
   )
 }
