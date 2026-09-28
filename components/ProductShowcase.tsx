@@ -62,10 +62,10 @@ function ChaosFocusMockup() {
       {/* Before */}
       <div className="relative rounded-2xl overflow-hidden shadow-xl border border-[#D8D8D8]/60">
         <Image
-          src="/screenshots/desktiles-before-messy-desktop.jpg"
+          src="/screenshots/desktiles-before-messy-desktop.webp"
           alt="Messy Mac desktop before DeskTiles — files scattered everywhere"
-          width={1600}
-          height={900}
+          width={2000}
+          height={1299}
           loading="lazy"
           className="w-full h-auto block"
         />
