@@ -60,6 +60,26 @@ export default function PrivacyPage() {
             </section>
 
             <section>
+              <h2 className="text-[20px] font-semibold text-[#1D1D1F] mb-4">When you contact us from the app</h2>
+              <p>
+                If you use <strong>Report a Bug</strong> or <strong>Say Hello</strong> in the app's Help menu,
+                DeskTiles opens a new message in your own email app. Nothing is sent until you send it,
+                and you can see and edit everything first.
+              </p>
+              <p className="mt-4">
+                <strong>Report a Bug</strong> also attaches a small diagnostic log — app version, macOS version,
+                and recent app activity like menu and activation events. It never contains file names,
+                file contents, or anything from your tiles. You can open, review, or remove that
+                attachment before sending, like any other file attached to an email.
+              </p>
+              <p className="mt-4">
+                When you do write to us, we receive your email address and whatever you choose to include.
+                We use it only to reply and to fix the problem you reported. We do not add you to any
+                mailing list without asking, and we do not pass your message to anyone else.
+              </p>
+            </section>
+
+            <section>
               <h2 className="text-[20px] font-semibold text-[#1D1D1F] mb-4">This website</h2>
               <p>
                 The desktiles.app website does not use advertising trackers or third-party cookies.

@@ -10,10 +10,11 @@ export default function Footer() {
 
         <nav className="flex items-center gap-6 flex-wrap justify-center">
           {[
+            { label: 'Support', href: '/support' },
             { label: 'Privacy', href: '/privacy' },
-            { label: 'Contact', href: 'mailto:hello@desktiles.app' },
+            { label: 'Terms', href: '/terms' },
+            { label: 'Legal', href: '/legal' },
             { label: 'Release Notes', href: '/changelog' },
-            { label: 'Report a Bug', href: 'mailto:support@desktiles.app' },
           ].map((link) => (
             <a
               key={link.label}
