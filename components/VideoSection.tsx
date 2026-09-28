@@ -51,18 +51,15 @@ export default function VideoSection() {
 
           {/* Caption overlay */}
           <div
-            className="absolute inset-x-0 bottom-0 flex items-end justify-center pb-[6%] pointer-events-none"
+            className="absolute inset-0 flex items-center justify-center pointer-events-none"
             aria-live="polite"
           >
             <span
-              className="text-white font-semibold text-center px-5 py-2 rounded-full transition-all duration-300"
+              className="text-white font-bold tracking-[0.08em] uppercase text-center transition-all duration-300"
               style={{
-                fontSize: 'clamp(13px, 2vw, 22px)',
-                textShadow: '0 1px 12px rgba(0,0,0,0.7)',
-                background: 'rgba(0,0,0,0.38)',
-                backdropFilter: 'blur(6px)',
+                fontSize: 'clamp(28px, 5vw, 52px)',
+                textShadow: '0 2px 20px rgba(0,0,0,0.6)',
                 opacity: caption ? 1 : 0,
-                transform: caption ? 'translateY(0)' : 'translateY(6px)',
               }}
             >
               {caption ?? ' '}
