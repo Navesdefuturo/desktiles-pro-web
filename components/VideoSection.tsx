@@ -40,7 +40,7 @@ export default function VideoSection() {
         <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60 aspect-video">
           <video
             ref={videoRef}
-            src="/hero-demo.mp4"
+            src="https://pub-9292379b3ddc43b198e7f745192da27f.r2.dev/hero-demo.mp4"
             autoPlay
             muted
             loop

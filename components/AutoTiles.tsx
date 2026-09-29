@@ -64,7 +64,7 @@ export default function AutoTiles() {
 
           {/* Video left */}
           <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#D8D8D8]/60">
-            <video src="/videos/desktiles-save-layout.mp4" autoPlay muted loop playsInline preload="none" className="w-full h-auto block" />
+            <video src="https://pub-9292379b3ddc43b198e7f745192da27f.r2.dev/desktiles-save-layout.mp4" autoPlay muted loop playsInline preload="none" className="w-full h-auto block" />
           </div>
 
           {/* Text right */}
