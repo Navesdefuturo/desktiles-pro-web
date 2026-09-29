@@ -33,6 +33,7 @@ const securityHeaders = [
       "default-src 'self'",
       `script-src 'self' 'unsafe-inline' https://cdn.paddle.com https://assets.ipzmarketing.com${isDev ? " 'unsafe-eval'" : ''}`,
       "style-src 'self' 'unsafe-inline'",
+      "media-src 'self' https://pub-9292379b3ddc43b198e7f745192da27f.r2.dev",
       "img-src 'self' data: blob:",
       "font-src 'self'",
       "connect-src 'self' https://checkout.paddle.com https://plausible.io",
