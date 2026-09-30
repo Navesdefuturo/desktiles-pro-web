@@ -103,6 +103,13 @@ export default function PrivacyPage() {
                 email we send.
               </p>
               <p className="mt-4">
+                The subscription form on this site is provided by Mailrelay and embedded directly
+                on the page. The form does not set any cookies while you browse. If you submit the
+                form, Mailrelay may set functional cookies (session and anti-duplicate protection)
+                strictly necessary to process your subscription. These are not advertising or
+                tracking cookies.
+              </p>
+              <p className="mt-4">
                 Mailrelay's privacy policy:{' '}
                 <a href="https://mailrelay.com/en/privacy-policy/" className="text-[#1D1D1F] underline underline-offset-2" target="_blank" rel="noopener noreferrer">
                   mailrelay.com/en/privacy-policy
