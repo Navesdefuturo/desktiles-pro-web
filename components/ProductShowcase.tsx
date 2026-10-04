@@ -175,7 +175,7 @@ const features = [
     label: 'AUTO TILES',
     title: 'Automatic Tiles.\nSmart by default.',
     body: 'Start from a template designed for how you actually work. DeskTiles comes with pre-built layouts for common workflows — so your desktop is organized from day one, not day thirty.',
-    chips: ['🎨 Designer', '💻 Developer', '📋 Freelancer', '🔬 Researcher'],
+    chips: ['📋 My Projects', '⚡ Kanban Flow', '🎯 Eisenhower Matrix', '📥 Inbox + Lists'],
     extra: 'Or build your own. Pick from the Layout Gallery — rows, columns, Eisenhower matrix, and more — and apply it in one click. Each tile maps to a real project on your desktop, not a virtual folder.',
     imageLeft: true,
     mockup: (

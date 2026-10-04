@@ -15,8 +15,8 @@ const releases = [
     label: 'Initial release',
     notes: [
       'Project tiles — expand, collapse, drag and rename',
-      'Save & Recall — reopen every file and folder in one click',
-      'Auto Tiles — Smart, Eisenhower and Organize layouts',
+      'Save & Recall — save your tile layout and restore it in one click',
+      'Auto Tiles — Kanban, Eisenhower, Sprint Board and more preset layouts',
       'Quick Look preview without opening apps',
       'Layout gallery with presets',
       'Native macOS design — menu bar, right-click, keyboard shortcuts',

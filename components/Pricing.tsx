@@ -3,7 +3,7 @@
 const features = [
   'Unlimited project tiles',
   'Custom colors, fonts & layouts — Edit Style',
-  'All preset templates (Eisenhower, Designer, Developer…)',
+  'All preset templates (Kanban, Eisenhower, Sprint Board…)',
   'Keyboard shortcuts & Quick Look',
   'Native drag & drop — real Finder files',
   'macOS Sonoma, Sequoia, Tahoe & Golden Gate',
