@@ -27,9 +27,9 @@ export default function LegalPage() {
             <section>
               <h2 className="text-[20px] font-semibold text-[#1D1D1F] mb-4">Website owner</h2>
               <ul className="space-y-3 text-[15px]">
-                <li><span className="font-semibold text-[#1D1D1F]">Name:</span> [TITULAR]</li>
-                <li><span className="font-semibold text-[#1D1D1F]">NIF:</span> [NIF]</li>
-                <li><span className="font-semibold text-[#1D1D1F]">Address:</span> [DOMICILIO]</li>
+                <li><span className="font-semibold text-[#1D1D1F]">Name:</span> Cesar Pedro Julian Ibañez</li>
+                <li><span className="font-semibold text-[#1D1D1F]">NIF:</span> 46343787Y</li>
+                <li><span className="font-semibold text-[#1D1D1F]">Address:</span> Calle Balmes 421, Apartado de correos 6015, 08022 Barcelona, Spain</li>
                 <li>
                   <span className="font-semibold text-[#1D1D1F]">Email: </span>
                   <a href="mailto:hello@desktiles.app" className="text-[#1D1D1F] underline underline-offset-2">
