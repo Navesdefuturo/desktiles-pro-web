@@ -22,6 +22,7 @@ const jsonLd: WithContext<SoftwareApplication> = {
     url: 'https://desktiles.app',
     email: 'hello@desktiles.app',
     sameAs: [
+      'https://www.youtube.com/@desktilesapp',
       'https://www.instagram.com/desktilesapp',
       'https://x.com/desktilesapp',
       'https://www.tiktok.com/@desktiles',
