@@ -11,6 +11,7 @@ export default function Download() {
             src="/desktiles-dream-mac-workspace.png"
             alt="Imagining a better Mac desktop with DeskTiles"
             fill
+            sizes="(min-width: 768px) 550px, 100vw"
             className="object-cover object-center"
           />
           {/* Fade right to blend with light section */}
@@ -42,11 +43,22 @@ export default function Download() {
           </p>
 
           <a
-            href="#pricing"
-            className="inline-block bg-[#1D1D1F] text-white px-10 py-4 rounded-full text-[17px] font-semibold hover:bg-[#3D3D3F] transition-colors"
+            href="https://apps.apple.com/app/id6817085786"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block hover:opacity-80 transition-opacity"
+            aria-label="Download DeskTiles on the Mac App Store"
           >
-            Get DeskTiles — €14.99
+            <Image
+              src="/download-mac-app-store.svg"
+              alt="Download on the Mac App Store"
+              width={200}
+              height={51}
+              unoptimized
+            />
           </a>
+
+          <p className="text-[13px] text-[#92620A] font-semibold mt-3">Launch offer — €14.99</p>
 
           <p className="text-[13px] text-[#6E6E73] mt-5 leading-relaxed">
             One-time purchase &nbsp;·&nbsp; All future updates included

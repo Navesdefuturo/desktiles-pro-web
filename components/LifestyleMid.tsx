@@ -11,6 +11,7 @@ export default function LifestyleMid() {
             src="/screenshots/desktiles-lifestyle-man-workspace.webp"
             alt="Man working at his desk with DeskTiles — organized workspace with project tiles"
             fill
+            sizes="(min-width: 768px) 58vw, 100vw"
             className="object-cover object-center"
           />
           {/* Fade to white on the right for smooth text transition */}
@@ -44,7 +45,9 @@ export default function LifestyleMid() {
               Launch offer · Limited time
             </p>
             <a
-              href="#pricing"
+              href="https://apps.apple.com/app/id6817085786"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#1D1D1F] text-white text-[14px] font-medium px-6 py-3 rounded-full hover:bg-[#3D3D3F] transition-colors"
             >
               Get DeskTiles — €14.99

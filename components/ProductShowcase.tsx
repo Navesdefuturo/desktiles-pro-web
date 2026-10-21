@@ -185,6 +185,7 @@ const features = [
           alt="DeskTiles Eisenhower matrix layout — four quadrants for task prioritization"
           width={1200}
           height={900}
+          unoptimized
           className="w-full h-auto block"
         />
       </div>

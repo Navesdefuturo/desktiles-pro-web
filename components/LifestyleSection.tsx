@@ -26,7 +26,9 @@ export default function LifestyleSection() {
             Launch offer · Limited time
           </p>
           <a
-            href="#pricing"
+            href="https://apps.apple.com/app/id6817085786"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#1D1D1F] text-white text-[14px] font-medium px-6 py-3 rounded-full hover:bg-[#3D3D3F] transition-colors"
           >
             Get DeskTiles — €14.99
@@ -39,6 +41,7 @@ export default function LifestyleSection() {
             src="/screenshots/desktiles-lifestyle-layout-gallery.webp"
             alt="Person using DeskTiles — Layout Gallery open with project templates"
             fill
+            sizes="(min-width: 768px) 550px, 100vw"
             className="object-cover object-center"
           />
           <div

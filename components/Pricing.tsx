@@ -63,7 +63,9 @@ export default function Pricing() {
 
           {/* CTA */}
           <a
-            href="#download"
+            href="https://apps.apple.com/app/id6817085786"
+            target="_blank"
+            rel="noopener noreferrer"
             className="block w-full text-center bg-white text-[#1D1D1F] text-[16px] font-semibold py-4 rounded-2xl hover:bg-[#F0F0F0] transition-colors"
           >
             Get DeskTiles — €14.99

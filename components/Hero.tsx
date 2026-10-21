@@ -162,7 +162,9 @@ export default function Hero() {
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-3">
           <a
-            href="#pricing"
+            href="https://apps.apple.com/app/id6817085786"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#1D1D1F] text-white text-[15px] font-medium px-8 py-3.5 rounded-full hover:bg-[#3D3D3F] transition-colors"
           >
             Get DeskTiles — €14.99
