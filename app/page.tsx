@@ -21,6 +21,11 @@ const jsonLd: WithContext<SoftwareApplication> = {
     name: 'DeskTiles',
     url: 'https://desktiles.app',
     email: 'hello@desktiles.app',
+    sameAs: [
+      'https://www.instagram.com/desktilesapp',
+      'https://x.com/desktilesapp',
+      'https://www.tiktok.com/@desktiles',
+    ],
   },
   releaseNotes: 'https://desktiles.app/changelog',
 }

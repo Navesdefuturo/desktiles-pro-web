@@ -31,8 +31,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'DeskTiles — Projects. Not folders.',
     description: 'The Mac desktop. Reimagined. Organize by project, not by folder. One-time purchase — €14.99.',
-    site: '@desktiles_app',
-    creator: '@desktiles_app',
+    site: '@desktilesapp',
+    creator: '@desktilesapp',
   },
 }
 
