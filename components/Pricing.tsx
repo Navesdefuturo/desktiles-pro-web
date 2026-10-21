@@ -44,7 +44,7 @@ export default function Pricing() {
             <span className="text-[60px] font-bold text-white tracking-[-0.04em] leading-none">€14.99</span>
           </div>
           <p className="text-[15px] text-white/40 mb-10">
-            Regular price €19.99 after launch &nbsp;·&nbsp; One-time purchase, no subscription
+            Regular price €19.99 from 1 December 2026 &nbsp;·&nbsp; One-time purchase, no subscription
           </p>
 
           {/* Features */}
