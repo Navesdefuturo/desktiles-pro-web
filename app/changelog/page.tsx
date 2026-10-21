@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const releases = [
   {
     version: '1.0',
-    date: 'Coming soon',
+    date: 'October 2026',
     label: 'Initial release',
     notes: [
       'Project tiles — expand, collapse, drag and rename',

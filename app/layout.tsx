@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import PaddleProvider from '@/components/PaddleProvider'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'DeskTiles — Projects. Not folders.',
@@ -49,6 +50,14 @@ export default function RootLayout({
       <body>
         <PaddleProvider />
         {children}
+        {process.env.NEXT_PUBLIC_CF_BEACON_TOKEN && (
+          <Script
+            defer
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon={`{"token": "${process.env.NEXT_PUBLIC_CF_BEACON_TOKEN}"}`}
+            strategy="afterInteractive"
+          />
+        )}
       </body>
     </html>
   )
