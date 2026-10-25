@@ -88,13 +88,13 @@ export default function BeforeAfterSlider({
       {/* Labels — outside the clip so they never get cut off */}
       <span
         className="absolute bottom-4 left-6 text-white text-[11px] font-bold tracking-[0.15em] uppercase px-3 py-1 rounded-full pointer-events-none"
-        style={{ background: 'rgba(0,0,0,0.45)', backdropFilter: 'blur(6px)' }}
+        style={{ background: 'rgba(0,0,0,0.45)', backdropFilter: 'blur(6px)', opacity: pos >= 95 ? 0 : 1, transition: 'opacity 0.2s' }}
       >
         After
       </span>
       <span
         className="absolute bottom-4 right-6 text-white text-[11px] font-bold tracking-[0.15em] uppercase px-3 py-1 rounded-full pointer-events-none"
-        style={{ background: 'rgba(0,0,0,0.45)', backdropFilter: 'blur(6px)' }}
+        style={{ background: 'rgba(0,0,0,0.45)', backdropFilter: 'blur(6px)', opacity: pos <= 5 ? 0 : 1, transition: 'opacity 0.2s' }}
       >
         Before
       </span>
