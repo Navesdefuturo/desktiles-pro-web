@@ -86,17 +86,19 @@ export default function BeforeAfterSlider({
       </div>
 
       {/* Labels — outside the clip so they never get cut off */}
+      {/* Left label: "After" at 0% extreme (whole image = after), "Before" in the middle (left side = chaos = before) */}
       <span
         className="absolute bottom-4 left-6 text-white text-[11px] font-bold tracking-[0.15em] uppercase px-3 py-1 rounded-full pointer-events-none"
         style={{ background: 'rgba(0,0,0,0.45)', backdropFilter: 'blur(6px)', opacity: pos >= 95 ? 0 : 1, transition: 'opacity 0.2s' }}
       >
-        After
+        {pos <= 5 ? 'After' : 'Before'}
       </span>
+      {/* Right label: "Before" at 100% extreme (whole image = before), "After" in the middle (right side = clean = after) */}
       <span
         className="absolute bottom-4 right-6 text-white text-[11px] font-bold tracking-[0.15em] uppercase px-3 py-1 rounded-full pointer-events-none"
         style={{ background: 'rgba(0,0,0,0.45)', backdropFilter: 'blur(6px)', opacity: pos <= 5 ? 0 : 1, transition: 'opacity 0.2s' }}
       >
-        Before
+        {pos >= 95 ? 'Before' : 'After'}
       </span>
 
       {/* Divider line + handle */}

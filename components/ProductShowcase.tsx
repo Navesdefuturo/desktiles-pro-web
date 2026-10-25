@@ -65,7 +65,7 @@ function ChaosFocusMockup() {
       alt="Mac desktop before and after DeskTiles"
       width={1920}
       height={1200}
-      initialPosition={2}
+      initialPosition={50}
     />
   )
 }
