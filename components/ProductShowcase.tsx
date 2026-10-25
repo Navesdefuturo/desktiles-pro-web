@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import BeforeAfterSlider from './BeforeAfterSlider'
 
 // Feature label pill
 function Label({ text }: { text: string }) {
@@ -55,39 +56,17 @@ function LayoutGalleryMockup() {
   )
 }
 
-// FEATURE 2 — From chaos to focus (before/after with overlay labels)
+// FEATURE 2 — From chaos to focus (before/after curtain slider)
 function ChaosFocusMockup() {
   return (
-    <div className="flex flex-col gap-3">
-      {/* Before */}
-      <div className="relative rounded-2xl overflow-hidden shadow-xl border border-[#D8D8D8]/60">
-        <Image
-          src="/screenshots/desktiles-before-messy-desktop.webp"
-          alt="Messy Mac desktop before DeskTiles — files scattered everywhere"
-          width={2000}
-          height={1299}
-          loading="lazy"
-          className="w-full h-auto block"
-        />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-white font-bold tracking-[0.12em] uppercase"
-            style={{ fontSize: 'clamp(28px, 5vw, 52px)', textShadow: '0 2px 20px rgba(0,0,0,0.6)' }}>
-            Before
-          </span>
-        </div>
-      </div>
-
-      {/* After */}
-      <div className="relative rounded-2xl overflow-hidden shadow-xl border border-[#D8D8D8]/60">
-        <video src="https://pub-9292379b3ddc43b198e7f745192da27f.r2.dev/desktiles-after-stack.mp4" autoPlay muted loop playsInline preload="none" className="w-full h-auto block" />
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <span className="text-white font-bold tracking-[0.12em] uppercase"
-            style={{ fontSize: 'clamp(28px, 5vw, 52px)', textShadow: '0 2px 20px rgba(0,0,0,0.6)' }}>
-            After
-          </span>
-        </div>
-      </div>
-    </div>
+    <BeforeAfterSlider
+      before="/screenshots/desktiles-before-chaos.webp"
+      after="/screenshots/desktiles-after-tiles.webp"
+      alt="Mac desktop before and after DeskTiles"
+      width={1920}
+      height={1200}
+      initialPosition={2}
+    />
   )
 }
 
@@ -207,6 +186,7 @@ const features = [
     title: 'From chaos to focus.',
     body: 'Collapse entire projects into a single clean pill. Reduce visual noise instantly while keeping every file exactly where you need it.',
     imageLeft: true,
+    fullWidth: true,
     mockup: <ChaosFocusMockup />,
   },
   {
@@ -272,41 +252,54 @@ export default function ProductShowcase() {
     <section id="highlights" className="py-[100px] px-6">
       <div className="max-w-[1100px] mx-auto space-y-[100px]">
         {features.map((f) => (
-          <div key={f.label}>
-            <div
-              id={f.id}
-              className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center"
-            >
-              {/* Image */}
-              <div className={f.imageLeft ? 'md:order-1' : 'md:order-2'}>
+          <div key={f.label} id={f.id}>
+            {'fullWidth' in f && f.fullWidth ? (
+              /* Full-width layout: text centred above, mockup spans full container */
+              <div>
+                <div className="text-center mb-10 max-w-[600px] mx-auto">
+                  <Label text={f.label} />
+                  <h3 className="text-[clamp(28px,3.5vw,42px)] font-bold tracking-[-0.03em] text-[#1D1D1F] mb-5 leading-[1.1]">
+                    {f.title}
+                  </h3>
+                  <p className="text-[17px] text-[#6E6E73] leading-relaxed">
+                    {f.body}
+                  </p>
+                </div>
                 {f.mockup}
               </div>
+            ) : (
+              /* Standard 2-column layout */
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                {/* Image */}
+                <div className={f.imageLeft ? 'md:order-1' : 'md:order-2'}>
+                  {f.mockup}
+                </div>
 
-              {/* Text */}
-              <div className={f.imageLeft ? 'md:order-2' : 'md:order-1'}>
-                <Label text={f.label} />
-                <h3 className="text-[clamp(28px,3.5vw,42px)] font-bold tracking-[-0.03em] text-[#1D1D1F] mb-5 leading-[1.1]"
-                  style={{ whiteSpace: 'pre-line' }}>
-                  {f.title}
-                </h3>
-                <p className="text-[17px] text-[#6E6E73] leading-relaxed mb-6">
-                  {f.body}
-                </p>
-                {'chips' in f && f.chips && (
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {(f.chips as string[]).map((c) => (
-                      <div key={c} className="flex items-center gap-1.5 bg-[#F5F5F7] border border-[#D2D2D7]/60 rounded-full px-4 py-2 text-[13px] text-[#1D1D1F] font-medium">
-                        {c}
-                      </div>
-                    ))}
-                  </div>
-                )}
-                {'extra' in f && f.extra && (
-                  <p className="text-[14px] text-[#6E6E73] leading-relaxed">{f.extra as string}</p>
-                )}
+                {/* Text */}
+                <div className={f.imageLeft ? 'md:order-2' : 'md:order-1'}>
+                  <Label text={f.label} />
+                  <h3 className="text-[clamp(28px,3.5vw,42px)] font-bold tracking-[-0.03em] text-[#1D1D1F] mb-5 leading-[1.1]"
+                    style={{ whiteSpace: 'pre-line' }}>
+                    {f.title}
+                  </h3>
+                  <p className="text-[17px] text-[#6E6E73] leading-relaxed mb-6">
+                    {f.body}
+                  </p>
+                  {'chips' in f && f.chips && (
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      {(f.chips as string[]).map((c) => (
+                        <div key={c} className="flex items-center gap-1.5 bg-[#F5F5F7] border border-[#D2D2D7]/60 rounded-full px-4 py-2 text-[13px] text-[#1D1D1F] font-medium">
+                          {c}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  {'extra' in f && f.extra && (
+                    <p className="text-[14px] text-[#6E6E73] leading-relaxed">{f.extra as string}</p>
+                  )}
+                </div>
               </div>
-            </div>
-
+            )}
           </div>
         ))}
       </div>
