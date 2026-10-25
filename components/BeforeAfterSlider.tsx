@@ -24,7 +24,7 @@ export default function BeforeAfterSlider({
   const dragging = useRef(false)
   const wrapRef = useRef<HTMLDivElement>(null)
 
-  const clamp = (v: number) => Math.min(96, Math.max(1, v))
+  const clamp = (v: number) => Math.min(100, Math.max(0, v))
 
   const move = useCallback((clientX: number) => {
     if (!wrapRef.current) return
