@@ -13,7 +13,11 @@ export default function Newsletter() {
           Stay in the loop
         </h2>
         <p className="text-[15px] text-[#6E6E73] mb-6 leading-relaxed">
-          New features for DeskTiles, and a heads-up when Pepemundo launches a new app.
+          News about DeskTiles from{' '}
+          <a href="https://pepemundo.com" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-[#1D1D1F] transition-colors">
+            Pepemundo
+          </a>
+          , the software studio behind it, and a heads-up when we launch a new app.
           No spam, unsubscribe anytime.
         </p>
 

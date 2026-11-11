@@ -54,6 +54,13 @@ export default function Footer() {
             <span className="text-[13px] text-[#6E6E73]">© 2026 DeskTiles</span>
             <span className="text-[13px] text-[#6E6E73]">Made with ❤️ in Barcelona</span>
           </div>
+          <p className="text-[12px] text-[#6E6E73]">
+            DeskTiles is made by{' '}
+            <a href="https://pepemundo.com" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-[#1D1D1F] transition-colors">
+              Pepemundo
+            </a>
+            , the software studio behind it and our other apps.
+          </p>
           <div className="flex items-center gap-4">
             {socials.map((s) => (
               <a
