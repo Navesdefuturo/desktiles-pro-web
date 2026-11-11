@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
 const links = [
@@ -14,6 +15,16 @@ const links = [
 
 export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const pathname = usePathname()
+
+  function handleLogoClick(e: React.MouseEvent<HTMLAnchorElement>) {
+    if (pathname !== '/') return
+    e.preventDefault()
+    setMenuOpen(false)
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' })
+    if (window.location.hash) history.replaceState(null, '', '/')
+  }
 
   return (
     <nav
@@ -21,7 +32,11 @@ export default function Navigation() {
     >
       <div className="max-w-[1200px] mx-auto px-6 h-14 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-2 shrink-0">
+        <a
+          href="/"
+          onClick={handleLogoClick}
+          className="flex items-center gap-2 shrink-0 no-underline"
+        >
           <Image
             src="/desktiles-icon.png"
             alt="DeskTiles"
@@ -32,7 +47,7 @@ export default function Navigation() {
           <span className="text-[#1D1D1F] font-semibold text-[15px] tracking-[-0.01em]">
             DeskTiles
           </span>
-        </div>
+        </a>
 
         {/* Desktop nav links */}
         <div className="hidden md:flex items-center gap-7">
