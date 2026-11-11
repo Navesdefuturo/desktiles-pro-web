@@ -37,7 +37,7 @@ const securityHeaders = [
       "img-src 'self' data: blob:",
       "font-src 'self'",
       "connect-src 'self' https://checkout.paddle.com https://plausible.io https://cloudflareinsights.com",
-      "frame-src https://checkout.paddle.com https://desktiles.ipzmarketing.com",
+      "frame-src https://checkout.paddle.com https://news.pepemundo.com",
       "object-src 'none'",
       "base-uri 'self'",
       "form-action 'self'",

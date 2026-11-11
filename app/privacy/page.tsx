@@ -96,18 +96,25 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-[20px] font-semibold text-[#1D1D1F] mb-4">Newsletter</h2>
               <p>
-                If you subscribe to DeskTiles updates, your email address is stored and processed
-                by <strong>Mailrelay</strong> (IPZ Marketing, S.L.) on our behalf.
-                Mailrelay acts as a data processor under the GDPR. We use your email address only
-                to send you product updates. You can unsubscribe at any time using the link in any
-                email we send.
+                If you subscribe to our updates, your email address is stored and processed by{' '}
+                <strong>Mailrelay</strong> (IPZ Marketing, S.L.) on our behalf. Mailrelay acts as
+                a data processor under the GDPR. The updates come from Pepemundo, the studio behind
+                DeskTiles, and we use your email address only to send you news about DeskTiles and
+                our other apps. The same list is used for all Pepemundo apps. You can unsubscribe
+                at any time using the link in any email we send.
               </p>
               <p className="mt-4">
-                The subscription form on this site is provided by Mailrelay and embedded directly
-                on the page. The form does not set any cookies while you browse. If you submit the
-                form, Mailrelay may set functional cookies (session and anti-duplicate protection)
-                strictly necessary to process your subscription. These are not advertising or
-                tracking cookies.
+                The subscription form is provided by Mailrelay and loads only when you choose to
+                open it; nothing from the form is loaded while you browse this site. The form is
+                protected against spam with Google reCAPTCHA, provided by Google LLC (United
+                States). When the form opens, Google may process your IP address and device
+                information and set a cookie (_GRECAPTCHA, up to six months). Google uses this
+                information to provide and secure reCAPTCHA; see Google&apos;s privacy policy at{' '}
+                <a href="https://policies.google.com/privacy" className="text-[#1D1D1F] underline underline-offset-2" target="_blank" rel="noopener noreferrer">
+                  policies.google.com/privacy
+                </a>. If you submit the form, Mailrelay may also set functional cookies (session
+                and anti-duplicate protection) strictly necessary to process your subscription.
+                Mailrelay&apos;s cookies are not advertising or tracking cookies.
               </p>
               <p className="mt-4">
                 Mailrelay's privacy policy:{' '}

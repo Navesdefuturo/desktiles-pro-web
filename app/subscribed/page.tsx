@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: "You're subscribed — DeskTiles",
-  description: 'Thanks for subscribing to DeskTiles updates.',
+  description: 'Thanks for subscribing to updates from Pepemundo, the studio behind DeskTiles.',
 }
 
 export default function SubscribedPage() {
