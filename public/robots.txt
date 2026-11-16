@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Rastreadores de entrenamiento de IA — petición de exclusión
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+Sitemap: https://desktiles.app/sitemap.xml
+
+Content-Signal: search=yes, ai-input=yes, ai-train=no
