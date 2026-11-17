@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://desktiles.app/privacy' },
 }
 
-const LAST_UPDATED = 'September 2026'
+const LAST_UPDATED = 'November 2026'
 
 export default function PrivacyPage() {
   return (
@@ -100,8 +100,12 @@ export default function PrivacyPage() {
                 <strong>Mailrelay</strong> (IPZ Marketing, S.L.) on our behalf. Mailrelay acts as
                 a data processor under the GDPR. The updates come from Pepemundo, the studio behind
                 DeskTiles, and we use your email address only to send you news about DeskTiles and
-                our other apps. The same list is used for all Pepemundo apps. You can unsubscribe
-                at any time using the link in any email we send.
+                our other apps. The same list is used for all Pepemundo apps. Legal basis: your
+                consent (GDPR art. 6.1.a), which you can withdraw at any time using the unsubscribe
+                link in any email we send. We keep your address until you unsubscribe. The
+                subscription form has an unticked checkbox that you must check to subscribe. We keep
+                a record of your consent (date, IP address and the text you accepted) to be able to
+                prove it if needed, and for as long as legal claims may arise.
               </p>
               <p className="mt-4">
                 The subscription form is provided by Mailrelay and loads only when you choose to
@@ -174,8 +178,8 @@ export default function PrivacyPage() {
               <h2 className="text-[20px] font-semibold text-[#1D1D1F] mb-4">Contact</h2>
               <p>
                 For any privacy question:{' '}
-                <a href="mailto:hello@desktiles.app" className="text-[#1D1D1F] underline underline-offset-2">
-                  hello@desktiles.app
+                <a href="mailto:privacy@pepemundo.com" className="text-[#1D1D1F] underline underline-offset-2">
+                  privacy@pepemundo.com
                 </a>
               </p>
               <p className="mt-4 text-[#6E6E73]">

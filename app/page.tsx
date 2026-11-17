@@ -1,34 +1,51 @@
-import type { WithContext, SoftwareApplication } from 'schema-dts'
 import Navigation from '@/components/Navigation'
 
-const jsonLd: WithContext<SoftwareApplication> = {
+const APP_STORE_URL = 'https://apps.apple.com/app/id6817085786'
+
+const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: 'DeskTiles',
-  description: 'Organize your Mac desktop by project, not by folder. Custom project tiles — expand, collapse, drag, rename. Native macOS. No cloud. No subscription.',
-  url: 'https://desktiles.app',
-  applicationCategory: 'ProductivityApplication',
-  operatingSystem: 'macOS 14, macOS 15, macOS 26, macOS 27',
-  offers: {
-    '@type': 'Offer',
-    price: '14.99',
-    priceCurrency: 'EUR',
-    priceValidUntil: '2026-12-31',
-    availability: 'https://schema.org/InStock',
-  },
-  author: {
-    '@type': 'Organization',
-    name: 'DeskTiles',
-    url: 'https://desktiles.app',
-    email: 'hello@desktiles.app',
-    sameAs: [
-      'https://www.youtube.com/@desktilesapp',
-      'https://www.instagram.com/desktilesapp',
-      'https://x.com/desktilesapp',
-      'https://www.tiktok.com/@desktiles',
-    ],
-  },
-  releaseNotes: 'https://desktiles.app/changelog',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': 'https://desktiles.app/#website',
+      name: 'DeskTiles',
+      url: 'https://desktiles.app',
+      publisher: { '@id': 'https://desktiles.app/#org' },
+    },
+    {
+      '@type': 'Organization',
+      '@id': 'https://desktiles.app/#org',
+      name: 'Pepemundo',
+      url: 'https://pepemundo.com',
+      logo: 'https://pepemundo.com/press/pepemundo-mark-black.png',
+      email: 'hello@pepemundo.com',
+    },
+    {
+      '@type': 'SoftwareApplication',
+      name: 'DeskTiles',
+      description: 'Organize your Mac desktop by project, not by folder. Custom project tiles — expand, collapse, drag, rename. Native macOS. No cloud. No subscription.',
+      url: 'https://desktiles.app',
+      downloadUrl: APP_STORE_URL,
+      installUrl: APP_STORE_URL,
+      applicationCategory: 'ProductivityApplication',
+      operatingSystem: 'macOS 14, macOS 15, macOS 26, macOS 27',
+      offers: {
+        '@type': 'Offer',
+        price: '14.99',
+        priceCurrency: 'EUR',
+        priceValidUntil: '2026-12-31',
+        availability: 'https://schema.org/InStock',
+      },
+      publisher: { '@id': 'https://desktiles.app/#org' },
+      releaseNotes: 'https://desktiles.app/changelog',
+      sameAs: [
+        'https://www.youtube.com/@desktilesapp',
+        'https://www.instagram.com/desktilesapp',
+        'https://x.com/desktilesapp',
+        'https://www.tiktok.com/@desktiles',
+      ],
+    },
+  ],
 }
 import Hero from '@/components/Hero'
 import ScrollScrub from '@/components/ScrollScrub'
