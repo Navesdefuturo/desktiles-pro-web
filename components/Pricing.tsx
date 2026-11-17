@@ -39,12 +39,13 @@ export default function Pricing() {
               className="text-[28px] font-medium text-white/30 line-through"
               style={{ textDecorationColor: 'rgba(255,255,255,0.25)' }}
             >
-              €19.99
+              €19.99 / $19.99
             </span>
             <span className="text-[60px] font-bold text-white tracking-[-0.04em] leading-none">€14.99</span>
+            <span className="text-[28px] font-semibold text-white/60 leading-none tracking-[-0.02em]">/ $14.99</span>
           </div>
           <p className="text-[15px] text-white/40 mb-10">
-            Regular price €19.99 from 1 December 2026 &nbsp;·&nbsp; One-time purchase, no subscription
+            Regular price €19.99 / $19.99 from 1 December 2026 &nbsp;·&nbsp; One-time purchase, no subscription
           </p>
 
           {/* Features */}
@@ -68,7 +69,7 @@ export default function Pricing() {
             rel="noopener noreferrer"
             className="block w-full text-center bg-white text-[#1D1D1F] text-[16px] font-semibold py-4 rounded-2xl hover:bg-[#F0F0F0] transition-colors"
           >
-            Get DeskTiles — €14.99
+            Get DeskTiles — €14.99 / $14.99
           </a>
         </div>
 

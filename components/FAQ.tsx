@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: 'Is it really a one-time purchase?',
-    a: 'Yes. €14.99, one time. No subscription, no monthly fee. All future updates are included in the purchase price.',
+    a: 'Yes. €14.99 / $14.99, one time. No subscription, no monthly fee. All future updates are included in the purchase price.',
   },
   {
     q: 'What macOS versions does it support?',

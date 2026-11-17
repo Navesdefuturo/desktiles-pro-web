@@ -58,7 +58,7 @@ export default function Download() {
             />
           </a>
 
-          <p className="text-[13px] text-[#92620A] font-semibold mt-3">Launch offer — €14.99</p>
+          <p className="text-[13px] text-[#92620A] font-semibold mt-3">Launch offer — €14.99 / $14.99</p>
 
           <p className="text-[13px] text-[#6E6E73] mt-5 leading-relaxed">
             One-time purchase &nbsp;·&nbsp; All future updates included
