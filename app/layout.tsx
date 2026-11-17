@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'DeskTiles — Projects. Not folders.',
-    description: 'The Mac desktop. Reimagined. Organize by project, not by folder. One-time purchase — €14.99 / $14.99.',
+    description: 'The Mac desktop. Reimagined. Organize by project, not by folder. One-time purchase — $14.99 / €14.99.',
     type: 'website',
     url: 'https://desktiles.app',
     siteName: 'DeskTiles',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'DeskTiles — Projects. Not folders.',
-    description: 'The Mac desktop. Reimagined. Organize by project, not by folder. One-time purchase — €14.99 / $14.99.',
+    description: 'The Mac desktop. Reimagined. Organize by project, not by folder. One-time purchase — $14.99 / €14.99.',
     site: '@desktilesapp',
     creator: '@desktilesapp',
   },

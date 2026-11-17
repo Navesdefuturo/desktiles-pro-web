@@ -157,7 +157,7 @@ export default async function Image() {
             }}
           >
             <span style={{ color: '#FBBF24', fontSize: 16, fontWeight: 700, letterSpacing: '0.05em', display: 'flex' }}>
-              LAUNCH OFFER — €14.99 / $14.99
+              LAUNCH OFFER — $14.99 / €14.99
             </span>
           </div>
         </div>

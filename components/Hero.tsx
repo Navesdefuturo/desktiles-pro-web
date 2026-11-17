@@ -167,7 +167,7 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="bg-[#1D1D1F] text-white text-[15px] font-medium px-8 py-3.5 rounded-full hover:bg-[#3D3D3F] transition-colors"
           >
-            Get DeskTiles — €14.99 / $14.99
+            Get DeskTiles — $14.99 / €14.99
           </a>
           <a
             href="#highlights"

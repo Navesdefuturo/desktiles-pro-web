@@ -50,7 +50,7 @@ export default function LifestyleMid() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#1D1D1F] text-white text-[14px] font-medium px-6 py-3 rounded-full hover:bg-[#3D3D3F] transition-colors"
             >
-              Get DeskTiles — €14.99 / $14.99
+              Get DeskTiles — $14.99 / €14.99
             </a>
           </div>
         </div>
