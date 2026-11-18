@@ -24,8 +24,8 @@ const faqs = [
     a: 'A tile is a project container that lives on your desktop. It groups real files together — not copies, not shortcuts, the actual files. You can expand it to see all the files, or collapse it into a clean pill that takes almost no space.',
   },
   {
-    q: 'Can it be hacked or used to steal my files?',
-    a: 'No. DeskTiles makes no network connections — it has no server, no account, and no telemetry. It cannot send anything outside your Mac because it never tries to. Your files stay exactly where they are: on your drive, under your control. There is nothing to intercept.',
+    q: 'Are my files safe?',
+    a: 'Yes. DeskTiles makes no network connections — no server, no account, no telemetry. It cannot send anything outside your Mac because it never tries to. Your files stay exactly where they are: on your drive, under your control.',
   },
   {
     q: 'What if I change my mind?',
